@@ -475,8 +475,8 @@ function buildHitechCityJsonLd() {
   ];
 }
 
-export default function Hitech CityEscortsPage() {
-  const jsonLd = buildHitech CityJsonLd();
+export default function HitechCityEscortsPage() {
+  const jsonLd = buildHitechCityJsonLd();
   return (
     <main id="main-content" className="min-h-screen bg-black" itemScope itemType="https://schema.org/WebPage" lang="en-IN">
       {jsonLd.map((data, i) => (

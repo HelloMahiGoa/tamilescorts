@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getBaseUrl } from "@/lib/site";
@@ -680,7 +680,7 @@ export default function MarathahalliEscortsPage() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-6 sm:gap-8" itemProp="itemListElement" role="list">
-            {WHY_Marathahalli.map((item, idx) => (
+            {WHY_MARATHAHALLI.map((item, idx) => (
               <article
                 key={item.title}
                 className={`relative overflow-hidden ${

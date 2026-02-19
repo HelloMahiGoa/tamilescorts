@@ -680,7 +680,7 @@ export default function GachibowliEscortsPage() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-6 sm:gap-8" itemProp="itemListElement" role="list">
-            {WHY_Gachibowli.map((item, idx) => (
+            {WHY_GACHIBOWLI.map((item, idx) => (
               <article
                 key={item.title}
                 className={`relative overflow-hidden ${

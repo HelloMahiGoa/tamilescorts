@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getBaseUrl } from "@/lib/site";
@@ -158,7 +158,7 @@ const DURATION_OPTIONS = [
   { title: "Outstation Travel", desc: "Trips from Anna Nagar to Pondicherry, Mahabalipuram, or elsewhere. We need a few days' notice. Not every companion does outstation. Same discretion and payment.", popular: false },
 ];
 
-const WHO_BOOKS_Anna Nagar = [
+const WHO_BOOKS_AnnaNagar = [
   { title: "Business Travelers", body: "Staying at hotels in Anna Nagar for work. Don't want to eat alone or sit in a room. Need discreet company that's hassle-free. Most bookings are from business travelers." },
   { title: "Locals", body: "Living in or near Anna Nagar and want company for an evening-dinner, event, or just a few hours. Same process: tell us your area, when, and type; we fix someone who shows up." },
   { title: "Events & Corporate", body: "Need a plus-one for a client dinner or corporate event in Anna Nagar. We send someone presentable who knows how to keep the evening smooth. Popular for business gatherings." },
@@ -198,7 +198,7 @@ const CONTACT_METHODS = [
   { method: "Telegram", desc: "Fastest way to reach us. We usually reply within 1-2 hours. Best for quick questions and same-day bookings.", available: "24/7", response: "1-2 hours" },
 ];
 
-const WHY_Anna Nagar = [
+const WHY_AnnaNagar = [
   { title: "Central Location", desc: "Anna Nagar is centrally located in Chennai, making it easy for escorts to reach you from anywhere in the city. Quick access from T Nagar, Egmore, Adyar, and Guindy." },
   { title: "Hotel Density", desc: "High concentration of hotels in Anna Nagar means we're experienced with hotel bookings. We know the area, the hotels, and how to coordinate discreet outcall." },
   { title: "Business Hub", desc: "Many business travelers stay in Anna Nagar. We're used to corporate clients, business dinners, and professional occasions. Discretion is our default." },
@@ -682,7 +682,7 @@ export default function AnnaNagarEscortsPage() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-6 sm:gap-8" itemProp="itemListElement" role="list">
-            {WHY_ANNA_NAGAR.map((item, idx) => (
+            {WHY_AnnaNagar.map((item, idx) => (
               <article
                 key={item.title}
                 className={`relative overflow-hidden ${
@@ -1302,7 +1302,7 @@ export default function AnnaNagarEscortsPage() {
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            {WHO_BOOKS_ANNA_NAGAR.map((item) => (
+            {WHO_BOOKS_AnnaNagar.map((item) => (
               <div
                 key={item.title}
                 className="p-6 sm:p-8 bg-white/5 border border-white/10 hover:border-[var(--accent-gold)]/40 hover:bg-white/10 transition-all"
