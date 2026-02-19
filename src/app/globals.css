@@ -1,0 +1,293 @@
+@import "tailwindcss";
+
+/* Modern Dark Theme – inspired by hellomahi.in */
+:root {
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+  --accent-gold: #ffd700;
+  --accent-gold-light: #ffed4e;
+  --accent-green: #25d366;
+  --accent-orange: #ff6b35;
+  --nav-bg: rgba(20, 20, 20, 0.95);
+  --card-bg: rgba(30, 30, 30, 0.8);
+  --border-color: rgba(255, 255, 255, 0.1);
+  --text-muted: rgba(255, 255, 255, 0.7);
+  --text-secondary: rgba(255, 255, 255, 0.5);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-noto-sans);
+  --font-display: var(--font-cormorant);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+.font-display {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Kolam-style border accent */
+.kolam-border {
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 8px,
+    var(--border-pattern) 8px,
+    var(--border-pattern) 9px
+  );
+}
+
+/* Decorative South Indian motif */
+.motif-pattern {
+  background-image: radial-gradient(
+      circle at 20% 50%,
+      var(--accent-gold-light) 0%,
+      transparent 12%
+    ),
+    radial-gradient(
+      circle at 80% 50%,
+      var(--accent-gold-light) 0%,
+      transparent 12%
+    );
+  opacity: 0.4;
+}
+
+/* Modern tab animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+@keyframes flowArrow {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+}
+
+@keyframes continuousFlow {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes textReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    text-shadow: 0 0 20px rgba(139, 41, 66, 0.3), 0 0 40px rgba(201, 162, 39, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 30px rgba(139, 41, 66, 0.5), 0 0 60px rgba(201, 162, 39, 0.4);
+  }
+}
+
+@keyframes letterReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) rotateX(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotateX(0deg);
+  }
+}
+
+@keyframes shimmerText {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes rotateBorder {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes cityGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);
+  }
+  50% {
+    box-shadow: 0 0 20px 2px rgba(255, 215, 0, 0.15);
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.3s ease-out;
+}
+
+.shimmer-effect {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Intro section: gradient overlay animation on image */
+@keyframes gradientOverlaySlide {
+  0% {
+    background-position: 200% 50%;
+  }
+  100% {
+    background-position: -200% 50%;
+  }
+}
+
+.intro-image-gradient-overlay {
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    rgba(0, 0, 0, 0.2) 20%,
+    rgba(212, 175, 55, 0.15) 40%,
+    rgba(212, 175, 55, 0.25) 50%,
+    rgba(212, 175, 55, 0.15) 60%,
+    rgba(0, 0, 0, 0.2) 80%,
+    transparent 100%
+  );
+  background-size: 200% 200%;
+  animation: gradientOverlaySlide 8s ease-in-out infinite;
+  pointer-events: none;
+}
+
