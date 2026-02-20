@@ -12,6 +12,8 @@ export interface Profile {
   bio: string;
   image: string;
   images?: string[]; // Gallery images
+  videos?: string[]; // Optional video URLs (some profiles)
+  instagram?: string; // Optional - regular, housewife, college-girls don't have
   availability: string;
   languages: string[];
   services?: string[];
@@ -265,6 +267,14 @@ function generateProfiles(): Profile[] {
         // Use name slug as ID (URL path includes type/category, so name slug is sufficient)
         const profileId = nameSlug;
 
+        // Categories without Instagram: regular, housewife, college-girls
+        const hasInstagram = !["regular", "housewife", "college-girls"].includes(category);
+
+        // Videos: some profiles have videos. Artists, celebrity, models, actress typically do; others ~50%
+        const categoriesWithVideos = ["artists", "celebrity", "models", "actress"];
+        const hasVideos =
+          categoriesWithVideos.includes(category) || (seed % 2 === 0 && !categoriesWithVideos.includes(category));
+
         profiles.push({
           id: profileId,
           name,
@@ -276,6 +286,8 @@ function generateProfiles(): Profile[] {
           bio: getBio(category, type, name, locations[type][locationIndex], age, seed),
           image: `${localBase}/1.avif`,
           images: [2, 3, 4, 5, 6].map((num) => `${localBase}/${num}.avif`), // Gallery images: 2.avif through 6.avif (all available)
+          videos: hasVideos ? [1, 2, 3].map((n) => `${localBase}/v${n}.mp4`) : undefined,
+          instagram: hasInstagram ? `${nameSlug}_official` : undefined,
           availability: ["Available Now", "Available Today", "Available This Week"][seed % 3],
           languages: getLanguages(type),
           services: getServices(category),
