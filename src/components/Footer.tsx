@@ -24,8 +24,23 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <Link href="/" className="text-xl font-bold text-[var(--accent-gold)]">
-              Tamil Escorts
+            <Link 
+              href="/" 
+              className="group relative inline-block text-xl font-bold transition-all duration-300 hover:scale-105"
+              style={{ 
+                fontFamily: "var(--font-cormorant), serif",
+                letterSpacing: "0.08em",
+                fontWeight: 700,
+                background: "linear-gradient(135deg, #FFD700 0%, #FF9933 50%, #DC143C 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+                textShadow: "0 2px 8px rgba(220,20,60,0.2)",
+              }}
+            >
+              <span className="relative z-10">Tamil Escorts</span>
+              {/* Traditional decorative underline with saffron and red */}
+              <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[#FF9933]/60 via-[#DC143C]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </Link>
             <p className="mt-3 text-sm text-white/60">
               Premium Tamil profiles. South Indian theme, trusted and discreet.

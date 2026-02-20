@@ -20,18 +20,60 @@ export default function Navigation() {
 
       <div className="mx-auto max-w-6xl px-4 py-3 sm:px-6 lg:px-8">
         <nav className="flex items-center justify-between">
-          {/* Logo */}
+          {/* Logo - Traditional South Indian Style */}
           <Link
             href="/"
-            className="group flex items-center gap-2.5 transition-transform duration-200 hover:scale-[1.02]"
+            className="group flex items-center gap-3 transition-transform duration-200 hover:scale-[1.02]"
           >
-            <span className="relative flex h-2.5 w-2.5">
-              <span className="absolute inset-0 rounded-full bg-[var(--accent-green)] opacity-90" />
-              <span className="absolute inset-0 animate-ping rounded-full bg-[var(--accent-green)] opacity-40" style={{ animationDuration: "2s" }} />
+            {/* Traditional South Indian decorative element with traditional colors - Enhanced visibility */}
+            <div className="relative flex items-center">
+              {/* Saffron accent line - more visible */}
+              <div className="absolute -left-1.5 h-7 w-1 bg-gradient-to-b from-[#FF9933] via-[#FF8C00] to-transparent rotate-12 shadow-[0_0_6px_rgba(255,153,51,0.6)]" />
+              {/* Kumkum red dot (traditional bindi/tilaka) - larger and more visible */}
+              <span className="relative flex h-4 w-4 z-10">
+                <span className="absolute inset-0 rounded-full bg-gradient-to-br from-[#DC143C] via-[#B91C1C] to-[#8B0000] shadow-[0_0_12px_rgba(220,20,60,0.8)]" />
+                <span className="absolute inset-0 animate-ping rounded-full bg-[#DC143C] opacity-50" style={{ animationDuration: "2s" }} />
+                {/* Gold center - more prominent */}
+                <span className="absolute inset-[3px] rounded-full bg-[#FFD700] shadow-[0_0_8px_rgba(255,215,0,0.8)]" />
+              </span>
+              {/* Deep green accent line - more visible */}
+              <div className="absolute -right-1.5 h-7 w-1 bg-gradient-to-b from-transparent via-[#228B22] to-[#006400] -rotate-12 shadow-[0_0_6px_rgba(34,139,34,0.6)]" />
+            </div>
+            
+            {/* Logo text with traditional South Indian color palette - Enhanced visibility */}
+            <span 
+              className="relative text-xl font-bold tracking-wide transition-all duration-300 sm:text-2xl"
+              style={{ 
+                fontFamily: "var(--font-cormorant), serif",
+                letterSpacing: "0.1em",
+                fontWeight: 800,
+                color: "#FFD700",
+                textShadow: "0 0 10px rgba(255, 215, 0, 0.5), 0 2px 4px rgba(0,0,0,0.8), 2px 2px 0px rgba(255, 153, 51, 0.3)",
+              }}
+            >
+              <span className="relative inline-block group-hover:scale-105 transition-transform duration-300">
+                {/* Traditional decorative underline with saffron and red */}
+                <span className="absolute -bottom-1.5 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#FF9933] via-[#DC143C] to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-300" />
+                <span className="relative z-10 drop-shadow-[0_0_8px_rgba(255,215,0,0.6)]">Tamil Escorts</span>
+                {/* Glow effect with traditional colors */}
+                <span 
+                  className="absolute inset-0 text-xl sm:text-2xl font-bold opacity-20 blur-md transition-opacity duration-300 group-hover:opacity-40"
+                  style={{ 
+                    fontFamily: "var(--font-cormorant), serif",
+                    letterSpacing: "0.1em",
+                    color: "#FF9933",
+                  }}
+                >
+                  Tamil Escorts
+                </span>
+              </span>
             </span>
-            <span className="text-lg font-bold tracking-widest text-white transition-colors group-hover:text-[var(--accent-gold)] sm:text-xl">
-              Tamil Escorts
-            </span>
+            
+            {/* Traditional decorative elements - saffron and deep green dots */}
+            <div className="hidden sm:flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#FF9933]" />
+              <span className="h-1.5 w-1.5 rounded-full bg-[#228B22]" />
+            </div>
           </Link>
 
           {/* Desktop: menu links + CTA */}
