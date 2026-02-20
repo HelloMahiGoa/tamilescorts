@@ -33,6 +33,9 @@ export const metadata: Metadata = {
   title: "Tamil Escorts | Premium Tamil Profiles",
   description:
     "Tamil Escorts — premium Tamil profiles: regular, artists, celebrity, models, housewife, college girls, actress. South Indian theme, trusted and discreet.",
+  verification: {
+    google: "2Xut01-dRv8kAaeqHGCMMisnESVo4wUwekxQC2CFkOY",
+  },
 };
 
 export default function RootLayout({
