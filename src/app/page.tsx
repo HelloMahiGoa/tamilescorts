@@ -33,11 +33,20 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
     siteName: "Tamil Escorts",
     locale: "en_IN",
+    images: [
+      {
+        url: `${getBaseUrl()}/images/hero-desktop.avif`,
+        width: 1200,
+        height: 630,
+        alt: "Tamil Escorts - Premium South Indian Companions",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
+    images: [`${getBaseUrl()}/images/hero-desktop.avif`],
   },
   alternates: {
     canonical: getBaseUrl(),
