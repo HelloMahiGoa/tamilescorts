@@ -123,8 +123,7 @@ const POPULAR_CITIES = [
   { name: "Madurai", slug: "madurai-escorts" },
 ];
 
-const MORE_CITIES = [
-];
+const MORE_CITIES: { name: string; slug: string }[] = [];
 
 const ESCORT_TYPES = [
   { name: "Tamil Escorts", slug: "tamil", href: "/profiles/tamil/models" },
