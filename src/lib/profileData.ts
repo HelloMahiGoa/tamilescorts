@@ -275,7 +275,7 @@ function generateProfiles(): Profile[] {
           tagline: getTagline(category, seed),
           bio: getBio(category, type, name, locations[type][locationIndex], age, seed),
           image: `${localBase}/1.avif`,
-          images: [2, 3, 4].map((num) => `${localBase}/${num}.avif`), // Default gallery: 2.avif, 3.avif, 4.avif
+          images: [2, 3, 4, 5, 6].map((num) => `${localBase}/${num}.avif`), // Gallery images: 2.avif through 6.avif (all available)
           availability: ["Available Now", "Available Today", "Available This Week"][seed % 3],
           languages: getLanguages(type),
           services: getServices(category),

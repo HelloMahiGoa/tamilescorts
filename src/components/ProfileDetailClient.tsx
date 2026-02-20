@@ -35,12 +35,15 @@ export default function ProfileDetailClient({
 }: ProfileDetailClientProps) {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalIndex, setModalIndex] = useState(0);
+  const [failedImages, setFailedImages] = useState<Set<string>>(new Set());
 
   const typeLabel = TYPE_LABELS[profile.type];
   const categoryLabel = CATEGORY_LABELS[profile.category];
   const telegramUrl = `https://t.me/${profile.telegram}`;
 
-  const allImages = profile.images ? [profile.image, ...profile.images] : [profile.image];
+  // Filter out images that failed to load
+  const availableGalleryImages = profile.images?.filter(img => !failedImages.has(img)) || [];
+  const allImages = [profile.image, ...availableGalleryImages];
 
   const openModal = (index: number) => {
     setModalIndex(index);
@@ -119,25 +122,42 @@ export default function ProfileDetailClient({
                   </div>
                 </div>
 
-                {/* Thumbnail Gallery */}
-                {profile.images && profile.images.length > 0 && (
-                  <div className="grid grid-cols-4 gap-2">
-                    {profile.images.slice(0, 4).map((img, idx) => (
-                      <div
-                        key={idx}
-                        onClick={() => openModal(idx + 1)}
-                        className="group relative aspect-[3/4] cursor-pointer overflow-hidden rounded-xl border border-white/10 transition-all hover:border-[var(--accent-gold)]/50 hover:scale-105"
-                      >
-                        <Image
-                          src={img}
-                          alt={`${profile.name} - Image ${idx + 2}`}
-                          fill
-                          className="object-cover transition-transform duration-300 group-hover:scale-110"
-                          sizes="(max-width: 1024px) 25vw, 10vw"
-                          unoptimized={img.startsWith("/images/")}
-                        />
-                      </div>
-                    ))}
+                {/* Thumbnail Gallery - Display all available images */}
+                {availableGalleryImages.length > 0 && (
+                  <div 
+                    className="grid grid-cols-4 gap-2 max-h-[400px] overflow-y-auto pr-1"
+                    style={{
+                      scrollbarWidth: 'thin',
+                      scrollbarColor: 'rgba(255, 215, 0, 0.3) transparent'
+                    }}
+                  >
+                    {availableGalleryImages.map((img, idx) => {
+                      // Find the original index in profile.images for modal navigation
+                      const originalIndex = profile.images?.indexOf(img) ?? idx;
+                      return (
+                        <div
+                          key={img}
+                          onClick={() => openModal(originalIndex + 1)}
+                          className="group relative aspect-[3/4] cursor-pointer overflow-hidden rounded-xl border border-white/10 transition-all hover:border-[var(--accent-gold)]/50 hover:scale-105"
+                        >
+                          <Image
+                            src={img}
+                            alt={`${profile.name} - Image ${originalIndex + 2}`}
+                            fill
+                            className="object-cover transition-transform duration-300 group-hover:scale-110"
+                            sizes="(max-width: 1024px) 25vw, 10vw"
+                            unoptimized={img.startsWith("/images/")}
+                            onError={() => {
+                              setFailedImages(prev => new Set(prev).add(img));
+                            }}
+                          />
+                          {/* Image number badge */}
+                          <div className="absolute top-1 right-1 rounded-full bg-black/60 backdrop-blur-sm px-1.5 py-0.5 text-[10px] font-semibold text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                            {originalIndex + 2}
+                          </div>
+                        </div>
+                      );
+                    })}
                   </div>
                 )}
               </div>
