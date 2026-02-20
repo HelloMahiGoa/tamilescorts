@@ -2,9 +2,10 @@ import type { MetadataRoute } from "next";
 import { getBaseUrl } from "@/lib/site";
 import { getAllSlugs } from "@/lib/blog";
 import { CATEGORY_SLUGS, getCategoryPagePath } from "@/lib/categories";
-import { getTypePagePath, type EscortType } from "@/lib/profileData";
+import { allProfiles, getTypePagePath, type EscortType, type Category } from "@/lib/profileData";
 
 const ESCORT_TYPES: EscortType[] = ["tamil", "mallu", "telugu", "kannada"];
+const CATEGORIES: Category[] = ["regular", "housewife", "college-girls", "models", "artists", "celebrity", "actress"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = getBaseUrl();
@@ -61,5 +62,35 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.65,
   }));
 
-  return [...staticPages, ...cityUrls, ...categoryUrls, ...typeUrls, ...blogUrls, ...areaUrls];
+  // Category listing pages: /profiles/{type}/{category}
+  const categoryListingUrls: MetadataRoute.Sitemap = [];
+  ESCORT_TYPES.forEach((type) => {
+    CATEGORIES.forEach((category) => {
+      categoryListingUrls.push({
+        url: `${base}/profiles/${type}/${category}`,
+        lastModified: now,
+        changeFrequency: "weekly" as const,
+        priority: 0.7,
+      });
+    });
+  });
+
+  // Individual profile pages: /profiles/{type}/{category}/{id}
+  const profileUrls: MetadataRoute.Sitemap = allProfiles.map((profile) => ({
+    url: `${base}/profiles/${profile.type}/${profile.category}/${profile.id}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  return [
+    ...staticPages,
+    ...cityUrls,
+    ...categoryUrls,
+    ...typeUrls,
+    ...blogUrls,
+    ...areaUrls,
+    ...categoryListingUrls,
+    ...profileUrls,
+  ];
 }

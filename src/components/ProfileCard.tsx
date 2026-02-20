@@ -29,6 +29,7 @@ export default function ProfileCard({ profile, showCategory = false }: ProfileCa
         fill
         className="object-cover transition-transform duration-300 group-hover:scale-105"
         sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+        unoptimized={profile.image.startsWith("/images/")}
       />
       {/* Name tag: always visible at bottom */}
       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent px-3 py-3">

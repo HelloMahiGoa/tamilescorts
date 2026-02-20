@@ -73,7 +73,8 @@ export default function IntroSection() {
     if (!categorySlug) return [];
     const filtered = getProfilesByTypeAndCategory(activeTab as EscortType, categorySlug);
     // Sort by id to ensure consistent order, then slice
-    return filtered.sort((a, b) => a.id.localeCompare(b.id)).slice(0, 6);
+    // Show 8 profiles for all categories
+    return filtered.sort((a, b) => a.id.localeCompare(b.id)).slice(0, 8);
   }, [activeTab, activeCategory]);
 
   return (
@@ -353,7 +354,7 @@ export default function IntroSection() {
               <p className="mx-auto max-w-3xl text-lg text-white/80 leading-relaxed">
                 {CATEGORY_DESCRIPTIONS[activeCategory]}
               </p>
-              <div className="mt-8 grid grid-cols-2 gap-5 sm:gap-6 md:grid-cols-3">
+              <div className="mt-8 grid grid-cols-2 gap-5 sm:gap-6 lg:grid-cols-4">
                 {profiles.length === 0 ? (
                   <div className="col-span-full py-8 text-center">
                     <p className="text-lg text-white/70">
@@ -382,6 +383,7 @@ export default function IntroSection() {
                         fill
                         className="object-cover transition-transform duration-300 group-hover:scale-105"
                         sizes="(max-width: 768px) 50vw, 33vw"
+                        unoptimized={profile.image.startsWith("/images/")}
                       />
                       {/* Name tag: always visible at bottom */}
                       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent px-3 py-3">

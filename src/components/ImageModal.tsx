@@ -115,6 +115,7 @@ export default function ImageModal({
             className="max-h-full w-auto object-contain"
             priority
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 80vw"
+            unoptimized={images[activeIndex]?.startsWith("/images/")}
           />
         </div>
 
@@ -147,6 +148,7 @@ export default function ImageModal({
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 36px, 48px"
+                  unoptimized={img.startsWith("/images/")}
                 />
               </button>
             ))}

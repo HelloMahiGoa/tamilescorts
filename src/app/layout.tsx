@@ -33,9 +33,8 @@ export const metadata: Metadata = {
   title: "Tamil Escorts | Premium Tamil Profiles",
   description:
     "Tamil Escorts — premium Tamil profiles: regular, artists, celebrity, models, housewife, college girls, actress. South Indian theme, trusted and discreet.",
-  icons: {
-    icon: "/images/favicon.png",
-  },
+  // Favicon: use src/app/icon.svg (Next.js serves it automatically)
+  icons: { icon: "/icon.svg" },
   verification: {
     google: "2Xut01-dRv8kAaeqHGCMMisnESVo4wUwekxQC2CFkOY",
   },
