@@ -119,9 +119,9 @@ function generateProfiles(): Profile[] {
   };
   const locations: Record<EscortType, string[]> = {
     tamil: ["Chennai", "Coimbatore", "Madurai", "Trichy", "Salem"],
-    mallu: ["Kochi", "Trivandrum", "Kozhikode", "Thrissur", "Kannur"],
-    telugu: ["Hyderabad", "Vijayawada", "Visakhapatnam", "Warangal", "Guntur"],
-    kannada: ["Bangalore", "Mysore", "Hubli", "Mangalore", "Belgaum"],
+    mallu: ["Kochi", "Kozhikode", "Thrissur", "Kannur"],
+    telugu: ["Hyderabad", "Visakhapatnam", "Warangal", "Guntur"],
+    kannada: ["Bangalore", "Hubli", "Mangalore", "Belgaum"],
   };
 
   const profiles: Profile[] = [];

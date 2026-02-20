@@ -12,10 +12,6 @@ const CITY_ESCORTS_SLUGS = [
   "kochi-escorts",
   "coimbatore-escorts",
   "madurai-escorts",
-  "trivandrum-escorts",
-  "vijayawada-escorts",
-  "mysore-escorts",
-  "pondicherry-escorts",
 ] as const;
 
 const SLUG_TO_TITLE: Record<string, string> = {
@@ -25,10 +21,6 @@ const SLUG_TO_TITLE: Record<string, string> = {
   "kochi-escorts": "Kochi",
   "coimbatore-escorts": "Coimbatore",
   "madurai-escorts": "Madurai",
-  "trivandrum-escorts": "Trivandrum",
-  "vijayawada-escorts": "Vijayawada",
-  "mysore-escorts": "Mysore",
-  "pondicherry-escorts": "Pondicherry",
 };
 
 /** Chennai area page slugs (e.g. /omr-escorts). */

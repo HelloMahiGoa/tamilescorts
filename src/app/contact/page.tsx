@@ -90,7 +90,7 @@ export default function ContactPage() {
             We Serve Major South Indian Cities
           </h2>
           <p className="text-white/70 text-center mb-6 text-sm">
-            Chennai, Bangalore, Hyderabad, Kochi, Coimbatore, Madurai, Trivandrum, Vijayawada & more.
+            Chennai, Bangalore, Hyderabad, Kochi, Coimbatore, Madurai & more.
           </p>
           <div className="text-center">
             <Link

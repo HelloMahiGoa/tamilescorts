@@ -78,8 +78,6 @@ function buildHomepageJsonLd() {
         { "@type": "Place", name: "Kochi" },
         { "@type": "Place", name: "Coimbatore" },
         { "@type": "Place", name: "Madurai" },
-        { "@type": "Place", name: "Trivandrum" },
-        { "@type": "Place", name: "Vijayawada" },
       ],
     },
     {
@@ -127,7 +125,7 @@ export default function Home() {
           <p className="text-center text-lg sm:text-xl text-white/80 leading-relaxed">
             <strong className="text-white">Tamil Escorts</strong> and South Indian escort services in{" "}
             <strong className="text-white">Chennai</strong>, <strong className="text-white">Bangalore</strong>,{" "}
-            <strong className="text-white">Hyderabad</strong>, <strong className="text-white">Kochi</strong>, Coimbatore, Madurai, Trivandrum and Vijayawada. Book a discreet companion for dinner, events, travel or a relaxed evening. Verified profiles, cash or UPI, no advance for regular bookings.
+            <strong className="text-white">Hyderabad</strong>, <strong className="text-white">Kochi</strong>, Coimbatore and Madurai. Book a discreet companion for dinner, events, travel or a relaxed evening. Verified profiles, cash or UPI, no advance for regular bookings.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm">
             <Link href="/blog" className="text-[var(--accent-gold)] hover:underline">
@@ -185,7 +183,7 @@ export default function Home() {
               accent: "emerald",
               imageFirst: true,
               paragraphs: [
-                "Mallu escorts on our platform are mostly in Kochi and Trivandrum; we get requests from Calicut and other parts of Kerala too. What we hear from clients again and again is that they're easy to talk to—no airs, no drama. A lot of bookings are for dinner or a relaxed evening at the client's hotel; some want company for a wedding or a house party where everyone's speaking Malayalam. We've got girls who're fine with that. They don't feel like strangers in the room.",
+                "Mallu escorts on our platform are mostly in Kochi; we get requests from Calicut and other parts of Kerala too. What we hear from clients again and again is that they're easy to talk to—no airs, no drama. A lot of bookings are for dinner or a relaxed evening at the client's hotel; some want company for a wedding or a house party where everyone's speaking Malayalam. We've got girls who're fine with that. They don't feel like strangers in the room.",
                 "A fair share of Mallu escort bookings are for travel—a weekend in Goa, a couple of days in Munnar or Thekkady. We need a bit of notice for outstation; not everyone does it, but we have profiles who do. Same rules as everywhere: outcall to your place or hotel, discretion, pay when she arrives. If you're in Kerala for work or just passing through and want company that gets the culture, tell us your city and when you need someone. We'll see who's free and who fits what you're looking for.",
               ],
             },
@@ -199,7 +197,7 @@ export default function Home() {
               imageFirst: false,
               paragraphs: [
                 "Hyderabad is where most of our Telugu escort bookings happen—Banjara Hills, Jubilee Hills, Gachibowli, the usual hotel areas. We get a mix: locals who don't want the hassle of explaining themselves on a dating app, and out-of-town guys who're in the city for a few days and want company for dinner or an event. A lot of them want someone who can hold a conversation in Telugu if the room is full of it. We have profiles that work for high-end client dinners and ones that are more low-key—just someone to eat with and talk to.",
-                "Vijayawada and Vizag come up too; we don't have as many girls there as in Hyderabad, but we can check when you ask. Outcall to your hotel or home is standard. You tell us the occasion, the timing, and what you're looking for (chatty, quiet, presentable for an event), and we'll suggest who's available. Payment when she reaches you—cash or UPI. No advance for regular and housewife categories; for models and above we take a small advance and the rest on arrival. Same discretion rules: we don't hand out your number, and what happens stays between you and her.",
+                "Other Andhra cities come up too; we don't have as many girls there as in Hyderabad, but we can check when you ask. Outcall to your hotel or home is standard. You tell us the occasion, the timing, and what you're looking for (chatty, quiet, presentable for an event), and we'll suggest who's available. Payment when she reaches you—cash or UPI. No advance for regular and housewife categories; for models and above we take a small advance and the rest on arrival. Same discretion rules: we don't hand out your number, and what happens stays between you and her.",
               ],
             },
             {
@@ -883,7 +881,7 @@ export default function Home() {
               Find South Indian escorts in your city
             </p>
             <p className="mt-3 text-base text-white/60 max-w-2xl mx-auto">
-              We provide Tamil and South Indian escort services in Chennai, Bangalore, Hyderabad, Kochi, Coimbatore, Madurai, Trivandrum and Vijayawada. Outcall to your hotel or home, or incall where available.
+              We provide Tamil and South Indian escort services in Chennai, Bangalore, Hyderabad, Kochi, Coimbatore and Madurai. Outcall to your hotel or home, or incall where available.
             </p>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -894,8 +892,6 @@ export default function Home() {
               { city: "Kochi", state: "Kerala", count: "35+ profiles", slug: "kochi-escorts" },
               { city: "Coimbatore", state: "Tamil Nadu", count: "30+ profiles", slug: "coimbatore-escorts" },
               { city: "Madurai", state: "Tamil Nadu", count: "25+ profiles", slug: "madurai-escorts" },
-              { city: "Trivandrum", state: "Kerala", count: "20+ profiles", slug: "trivandrum-escorts" },
-              { city: "Vijayawada", state: "Andhra Pradesh", count: "20+ profiles", slug: "vijayawada-escorts" },
             ].map((location, idx) => (
               <Link
                 key={idx}

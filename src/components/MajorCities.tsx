@@ -7,10 +7,6 @@ const CITIES = [
   "Kochi",
   "Coimbatore",
   "Madurai",
-  "Trivandrum",
-  "Vijayawada",
-  "Mysore",
-  "Pondicherry",
 ];
 
 export default function MajorCities() {

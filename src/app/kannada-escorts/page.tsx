@@ -7,9 +7,9 @@ import type { CategorySlug } from "@/lib/categories";
 const base = getBaseUrl();
 const url = `${base}/kannada-escorts`;
 
-const metaTitle = "Kannada Escorts | Premium Kannada Escorts in Bangalore, Mysore, Chennai & Hyderabad";
+const metaTitle = "Kannada Escorts | Premium Kannada Escorts in Bangalore, Chennai & Hyderabad";
 const metaDescription =
-  "Kannada escorts and escort service across South India. Outcall to your hotel or place in Bangalore, Mysore, Chennai, Hyderabad, Coimbatore, Madurai. Discreet, verified. Regular, housewife, models, artists, celebrity, actress. Pay when you meet.";
+  "Kannada escorts and escort service across South India. Outcall to your hotel or place in Bangalore, Chennai, Hyderabad, Coimbatore, Madurai. Discreet, verified. Regular, housewife, models, artists, celebrity, actress. Pay when you meet.";
 
 function buildKannadaJsonLd() {
   const localBusinessId = `${url}#localbusiness`;
@@ -38,13 +38,12 @@ function buildKannadaJsonLd() {
       "@id": localBusinessId,
       name: "Kannada Escorts",
       description:
-        "Premium Kannada escort service across South India. Outcall to Bangalore, Mysore, Chennai, Hyderabad, Coimbatore, Madurai. Discreet, verified companions.",
+        "Premium Kannada escort service across South India. Outcall to Bangalore, Chennai, Hyderabad, Coimbatore, Madurai. Discreet, verified companions.",
       url,
       image: `${base}/images/2.avif`,
       priceRange: "₹₹ - ₹₹₹₹₹",
       areaServed: [
         { "@type": "City", name: "Bangalore" },
-        { "@type": "City", name: "Mysore" },
         { "@type": "City", name: "Chennai" },
         { "@type": "City", name: "Hyderabad" },
         { "@type": "City", name: "Coimbatore" },
@@ -70,7 +69,6 @@ export const metadata: Metadata = {
     "Kannada escorts",
     "Kannada escort service",
     "Kannada escorts Bangalore",
-    "Kannada escorts Mysore",
     "Kannada escorts Chennai",
     "Kannada escorts Hyderabad",
     "Kannada escorts Coimbatore",
@@ -115,7 +113,6 @@ const TRUST_ITEMS = [
 
 const POPULAR_CITIES = [
   { name: "Bangalore", slug: "bangalore-escorts", desc: "IT hub & cosmopolitan" },
-  { name: "Mysore", slug: "mysore-escorts", desc: "Heritage city" },
   { name: "Chennai", slug: "chennai-escorts", desc: "Capital of Tamil Nadu" },
   { name: "Hyderabad", slug: "hyderabad-escorts", desc: "Tech & business center" },
   { name: "Coimbatore", slug: "coimbatore-escorts", desc: "Industrial city" },
@@ -124,9 +121,6 @@ const POPULAR_CITIES = [
 
 const MORE_CITIES = [
   { name: "Madurai", slug: "madurai-escorts" },
-  { name: "Trivandrum", slug: "trivandrum-escorts" },
-  { name: "Vijayawada", slug: "vijayawada-escorts" },
-  { name: "Pondicherry", slug: "pondicherry-escorts" },
 ];
 
 const HOW_IT_WORKS = [
@@ -192,7 +186,7 @@ const WHO_BOOKS = [
   },
   {
     title: "Locals",
-    body: "Living in Bangalore, Mysore, Chennai, Hyderabad or elsewhere and want company for an evening—dinner, event, or just a few hours. Same process: you tell us area, when, and category; we fix someone who shows up.",
+    body: "Living in Bangalore, Chennai, Hyderabad or elsewhere and want company for an evening—dinner, event, or just a few hours. Same process: you tell us area, when, and category; we fix someone who shows up.",
   },
   {
     title: "Events & client dinners",
@@ -222,7 +216,7 @@ const WHAT_TO_EXPECT = [
 const FAQ_ITEMS = [
   {
     q: "What cities do you cover for Kannada escorts?",
-    a: "We cover Bangalore, Mysore, Chennai, Hyderabad, Coimbatore, Madurai, Kochi, Trivandrum, Vijayawada, Pondicherry and more across South India. Tell us your city and area when you book and we'll fix someone who can reach you on time.",
+    a: "We cover Bangalore, Chennai, Hyderabad, Coimbatore, Madurai, Kochi and more across South India. Tell us your city and area when you book and we'll fix someone who can reach you on time.",
   },
   {
     q: "Do I need to pay advance?",
@@ -359,7 +353,7 @@ export default function KannadaEscortsPage() {
               <div className="mt-6 h-px w-16 bg-[var(--accent-gold)]" />
               <p className="mt-6 text-lg sm:text-xl text-white/85 leading-relaxed max-w-xl">
                 Premium Kannada escort service across South India. Outcall to your hotel or your
-                place—Bangalore, Mysore, Chennai, Hyderabad, Coimbatore, Madurai and more.
+                place—Bangalore, Chennai, Hyderabad, Coimbatore, Madurai and more.
               </p>
             </div>
           </div>
@@ -389,7 +383,6 @@ export default function KannadaEscortsPage() {
           <p className="text-base sm:text-lg text-white/80 leading-relaxed">
             <strong className="text-white">Kannada escorts</strong> and escort service in{" "}
             <strong className="text-white">Bangalore</strong>,{" "}
-            <strong className="text-white">Mysore</strong>,{" "}
             <strong className="text-white">Chennai</strong>, Hyderabad, Coimbatore and across South
             India. Kannada-speaking companions. Outcall to your hotel or place. Discreet, verified, pay
             when you meet.
@@ -429,8 +422,7 @@ export default function KannadaEscortsPage() {
             <p className="text-base sm:text-lg leading-relaxed text-white/85 mb-4">
               Karnataka and South India—Kannada escorts who make an evening feel relaxed. Most of our
               bookings are from people in town for work—staying at a hotel in{" "}
-              <strong className="text-white">Bangalore</strong> or{" "}
-              <strong className="text-white">Mysore</strong>—or locals who want company for a dinner or
+              <strong className="text-white">Bangalore</strong>—or locals who want company for a dinner or
               an event. We don&apos;t do the &quot;pay first and hope someone shows up&quot; thing. You
               tell us your city/area, what kind of evening you have in mind, and when. We suggest someone
               who can reach you without a fuss.
@@ -489,7 +481,7 @@ export default function KannadaEscortsPage() {
               Popular Cities for Kannada Escorts
             </h2>
             <p className="text-white/70 max-w-2xl mx-auto">
-              We cover Bangalore, Mysore, Chennai, Hyderabad, Coimbatore, Kochi and more across South
+              We cover Bangalore, Chennai, Hyderabad, Coimbatore, Kochi and more across South
               India. Tell us your city and area when you book and we&apos;ll fix someone who can reach you
               on time.
             </p>
@@ -524,7 +516,7 @@ export default function KannadaEscortsPage() {
               ))}
             </p>
             <p className="text-white/60 text-sm text-center mt-4 max-w-xl mx-auto">
-              Bangalore gets the most Kannada bookings. Mysore, Chennai and Hyderabad are popular with
+              Bangalore gets the most Kannada bookings. Chennai and Hyderabad are popular with
               business travelers and locals. Wherever you are, give us the city and area and we&apos;ll
               sort it.
             </p>
@@ -646,7 +638,7 @@ export default function KannadaEscortsPage() {
                 someone who can hold a conversation in Kannada—for a family function, a dinner where
                 everyone&apos;s speaking Kannada, or just because you&apos;re more comfortable—tell us when
                 you book. We&apos;ll suggest who fits. It&apos;s one of the things clients in Bangalore and
-                Mysore ask for most.
+                Bangalore clients ask for most.
               </p>
             </div>
           </div>
@@ -872,7 +864,7 @@ export default function KannadaEscortsPage() {
           </div>
           <div className="rounded-2xl border border-white/10 bg-black/40 p-6 sm:p-8 space-y-4">
             <p className="text-white/75">
-              <strong className="text-white">Same-day:</strong> Message as early as you can. We usually reply within 1–2 hours; we&apos;ll tell you who&apos;s free and can reach you. Popular in Bangalore, Mysore, Chennai, Kochi.
+              <strong className="text-white">Same-day:</strong> Message as early as you can. We usually reply within 1–2 hours; we&apos;ll tell you who&apos;s free and can reach you. Popular in Bangalore, Chennai, Kochi.
             </p>
             <p className="text-white/75">
               <strong className="text-white">Advance:</strong> For full-night, events, or outstation trips, book a day or two ahead so we can confirm the right Kannada escort and timing.

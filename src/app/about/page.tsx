@@ -38,7 +38,7 @@ export default function AboutPage() {
           </h2>
           <div className="space-y-5 text-lg text-white/80 leading-relaxed">
             <p>
-              We are a premium escort service operating across South India, with a strong presence in Chennai, Bangalore, Hyderabad, Kochi, Coimbatore, Madurai, Trivandrum, and Vijayawada. Our focus is simple: to provide genuine, professional companionship to clients who value discretion, quality, and a personal touch.
+              We are a premium escort service operating across South India, with a strong presence in Chennai, Bangalore, Hyderabad, Kochi, Coimbatore and Madurai. Our focus is simple: to provide genuine, professional companionship to clients who value discretion, quality, and a personal touch.
             </p>
             <p>
               Unlike generic platforms, we specialise in South Indian companionship. Our companions speak Tamil, Malayalam, Kannada, Telugu, and English. They understand local culture, traditions, and the importance of making you feel at ease—whether you need a plus-one for a corporate dinner, company for a trip, or someone to share a relaxed evening with.
@@ -93,7 +93,7 @@ export default function AboutPage() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
               { title: "Diverse Categories", desc: "From regular escorts to artists, models, celebrity-style companions, housewife escorts, college girls, and actress profiles. We match you with the right type for your occasion." },
-              { title: "Multiple Cities", desc: "We operate in Chennai, Bangalore, Hyderabad, Kochi, Coimbatore, Madurai, Trivandrum, Vijayawada, and other major South Indian cities." },
+              { title: "Multiple Cities", desc: "We operate in Chennai, Bangalore, Hyderabad, Kochi, Coimbatore, Madurai, and other major South Indian cities." },
               { title: "Incall & Outcall", desc: "Meet at your hotel, home, or venue (outcall), or at the companion's location (incall) where available. We work around your preference and schedule." },
               { title: "Flexible Duration", desc: "Short bookings for a few hours or longer engagements for the night or for travel. We accommodate your timeline." },
               { title: "Event & Travel", desc: "Need a plus-one for a business dinner, wedding, or trip? Our companions are comfortable at events and can travel with you when arranged in advance." },

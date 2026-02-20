@@ -114,12 +114,7 @@ const POPULAR_CITIES = [
   { name: "Kochi", slug: "kochi-escorts", desc: "Kerala port city" },
 ];
 
-const MORE_CITIES = [
-  { name: "Trivandrum", slug: "trivandrum-escorts" },
-  { name: "Vijayawada", slug: "vijayawada-escorts" },
-  { name: "Mysore", slug: "mysore-escorts" },
-  { name: "Pondicherry", slug: "pondicherry-escorts" },
-];
+const MORE_CITIES: { name: string; slug: string }[] = [];
 
 const HOW_IT_WORKS = [
   { step: 1, title: "Contact Us", body: "Message or call with your city/area, when you need someone, and what you have in mind. We'll ask the basics—hotel or your place, category (regular, housewife, model, etc.)." },
@@ -155,7 +150,7 @@ const WHAT_TO_EXPECT = [
 ];
 
 const FAQ_ITEMS = [
-  { q: "What cities do you cover for Tamil escorts?", a: "We cover Chennai, Bangalore, Hyderabad, Coimbatore, Madurai, Kochi, Trivandrum, Vijayawada, Mysore, Pondicherry and more across South India. Tell us your city and area when you book and we'll fix someone who can reach you on time." },
+  { q: "What cities do you cover for Tamil escorts?", a: "We cover Chennai, Bangalore, Hyderabad, Coimbatore, Madurai, Kochi and more across South India. Tell us your city and area when you book and we'll fix someone who can reach you on time." },
   { q: "Do I need to pay advance?", a: "For regular, housewife and college-girl profiles—no advance. We need hotel proof and room details if you're at a hotel, and you give her name at reception before she starts. For models, artists, celebrity and actress we take a small advance (10% or 20%); the rest when she arrives." },
   { q: "How do I book a Tamil escort?", a: "Message us on Telegram. Tell us your city/area, when you need someone, and what you're looking for (regular, housewife, model, etc.). We'll suggest who's free. Same-day and advance bookings both work." },
   { q: "Is my information kept private?", a: "Yes. We don't share your number with the girls. We don't store or share your details. All coordination goes through us. Discretion is non-negotiable." },
@@ -357,27 +352,29 @@ export default function TamilEscortsPage() {
               </Link>
             ))}
           </div>
-          <div className="rounded-xl border border-white/10 bg-black/30 px-6 py-5 text-center">
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-[var(--accent-gold)]/90 mb-3">
-              More Cities
-            </h3>
-            <p className="text-center text-white/70">
-              {MORE_CITIES.map((city, i) => (
-                <span key={city.slug}>
-                  <Link
-                    href={`/${city.slug}`}
-                    className="text-white/85 hover:text-[var(--accent-gold)] hover:underline transition-colors"
-                  >
-                    {city.name}
-                  </Link>
-                  {i < MORE_CITIES.length - 1 ? " • " : ""}
-                </span>
-              ))}
-            </p>
-            <p className="text-white/60 text-sm text-center mt-4 max-w-xl mx-auto">
-              Chennai and Bangalore get the most bookings. Hyderabad, Coimbatore and Madurai are popular with business travelers and locals. Wherever you are, give us the city and area and we&apos;ll sort it.
-            </p>
-          </div>
+          {MORE_CITIES.length > 0 && (
+            <div className="rounded-xl border border-white/10 bg-black/30 px-6 py-5 text-center">
+              <h3 className="text-sm font-semibold uppercase tracking-wider text-[var(--accent-gold)]/90 mb-3">
+                More Cities
+              </h3>
+              <p className="text-center text-white/70">
+                {MORE_CITIES.map((city, i) => (
+                  <span key={city.slug}>
+                    <Link
+                      href={`/${city.slug}`}
+                      className="text-white/85 hover:text-[var(--accent-gold)] hover:underline transition-colors"
+                    >
+                      {city.name}
+                    </Link>
+                    {i < MORE_CITIES.length - 1 ? " • " : ""}
+                  </span>
+                ))}
+              </p>
+              <p className="text-white/60 text-sm text-center mt-4 max-w-xl mx-auto">
+                Chennai and Bangalore get the most bookings. Hyderabad, Coimbatore and Madurai are popular with business travelers and locals. Wherever you are, give us the city and area and we&apos;ll sort it.
+              </p>
+            </div>
+          )}
         </div>
       </section>
 
@@ -714,7 +711,7 @@ export default function TamilEscortsPage() {
             </Link>
             <Link href="/kannada-escorts" className="rounded-xl border border-white/10 bg-black/30 p-5 hover:border-[var(--accent-gold)]/40 transition-colors text-center">
               <span className="text-lg font-bold text-[var(--accent-gold)]">Kannada Escorts</span>
-              <p className="text-sm text-white/75 mt-2">Kannada-speaking companions in Bangalore, Mysore & more</p>
+              <p className="text-sm text-white/75 mt-2">Kannada-speaking companions in Bangalore & more</p>
             </Link>
           </div>
         </div>

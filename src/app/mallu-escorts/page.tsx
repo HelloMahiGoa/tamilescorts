@@ -7,9 +7,9 @@ import { getCategoryPagePath, type CategorySlug } from "@/lib/categories";
 const base = getBaseUrl();
 const url = `${base}/mallu-escorts`;
 
-const metaTitle = "Mallu Escorts | Premium Mallu Escorts in Kochi, Trivandrum, Bangalore & More";
+const metaTitle = "Mallu Escorts | Premium Mallu Escorts in Kochi, Bangalore & More";
 const metaDescription =
-  "Mallu escorts and escort service across South India. Outcall to your hotel or place in Kochi, Trivandrum, Bangalore, Chennai, Hyderabad. Discreet, verified. Regular, housewife, models, artists, celebrity, actress. Pay when you meet.";
+  "Mallu escorts and escort service across South India. Outcall to your hotel or place in Kochi, Bangalore, Chennai, Hyderabad. Discreet, verified. Regular, housewife, models, artists, celebrity, actress. Pay when you meet.";
 
 function buildMalluJsonLd() {
   const localBusinessId = `${url}#localbusiness`;
@@ -37,13 +37,12 @@ function buildMalluJsonLd() {
       "@type": "LocalBusiness",
       "@id": localBusinessId,
       name: "Mallu Escorts",
-      description: "Premium Mallu escort service across South India. Outcall to Kochi, Trivandrum, Bangalore, Chennai, Hyderabad. Discreet, verified companions.",
+      description: "Premium Mallu escort service across South India. Outcall to Kochi, Bangalore, Chennai, Hyderabad. Discreet, verified companions.",
       url,
       image: `${base}/images/2.avif`,
       priceRange: "₹₹ - ₹₹₹₹₹",
       areaServed: [
         { "@type": "City", name: "Kochi" },
-        { "@type": "City", name: "Trivandrum" },
         { "@type": "City", name: "Bangalore" },
         { "@type": "City", name: "Chennai" },
         { "@type": "City", name: "Hyderabad" },
@@ -69,7 +68,6 @@ export const metadata: Metadata = {
     "Mallu escorts",
     "Mallu escort service",
     "Mallu escorts Kochi",
-    "Mallu escorts Trivandrum",
     "Mallu escorts Bangalore",
     "Mallu escorts Chennai",
     "Mallu escorts Hyderabad",
@@ -108,7 +106,6 @@ const TRUST_ITEMS = [
 
 const POPULAR_CITIES = [
   { name: "Kochi", slug: "kochi-escorts", desc: "Kerala's port city" },
-  { name: "Trivandrum", slug: "trivandrum-escorts", desc: "Kerala capital" },
   { name: "Bangalore", slug: "bangalore-escorts", desc: "IT hub & cosmopolitan" },
   { name: "Chennai", slug: "chennai-escorts", desc: "Capital of Tamil Nadu" },
   { name: "Hyderabad", slug: "hyderabad-escorts", desc: "Tech & business center" },
@@ -117,9 +114,6 @@ const POPULAR_CITIES = [
 
 const MORE_CITIES = [
   { name: "Madurai", slug: "madurai-escorts" },
-  { name: "Vijayawada", slug: "vijayawada-escorts" },
-  { name: "Mysore", slug: "mysore-escorts" },
-  { name: "Pondicherry", slug: "pondicherry-escorts" },
 ];
 
 const HOW_IT_WORKS = [
@@ -144,7 +138,7 @@ const SERVICE_TYPES = [
 
 const WHO_BOOKS = [
   { title: "Business travelers", body: "In town for a few days, staying at a hotel. Don't want to eat alone or sit in a room. Need company that's discreet and hassle-free." },
-  { title: "Locals", body: "Living in Kochi, Trivandrum, Bangalore or elsewhere and want company for an evening—dinner, event, or just a few hours. Same process: you tell us area, when, and category; we fix someone who shows up." },
+  { title: "Locals", body: "Living in Kochi, Bangalore or elsewhere and want company for an evening—dinner, event, or just a few hours. Same process: you tell us area, when, and category; we fix someone who shows up." },
   { title: "Events & client dinners", body: "Need a plus-one for a corporate dinner or a client meet. We send someone presentable who knows how to keep the evening smooth." },
 ];
 
@@ -156,7 +150,7 @@ const WHAT_TO_EXPECT = [
 ];
 
 const FAQ_ITEMS = [
-  { q: "What cities do you cover for Mallu escorts?", a: "We cover Kochi, Trivandrum, Bangalore, Chennai, Hyderabad, Coimbatore, Madurai, Vijayawada, Mysore, Pondicherry and more across South India. Tell us your city and area when you book and we'll fix someone who can reach you on time." },
+  { q: "What cities do you cover for Mallu escorts?", a: "We cover Kochi, Bangalore, Chennai, Hyderabad, Coimbatore, Madurai and more across South India. Tell us your city and area when you book and we'll fix someone who can reach you on time." },
   { q: "Do I need to pay advance?", a: "For regular, housewife and college-girl profiles—no advance. We need hotel proof and room details if you're at a hotel, and you give her name at reception before she starts. For models, artists, celebrity and actress we take a small advance (10% or 20%); the rest when she arrives." },
   { q: "How do I book a Mallu escort?", a: "Message us on Telegram. Tell us your city/area, when you need someone, and what you're looking for (regular, housewife, model, etc.). We'll suggest who's free. Same-day and advance bookings both work." },
   { q: "Is my information kept private?", a: "Yes. We don't share your number with the girls. We don't store or share your details. All coordination goes through us. Discretion is non-negotiable." },
@@ -238,7 +232,7 @@ export default function MalluEscortsPage() {
               </h1>
               <div className="mt-6 h-px w-16 bg-[var(--accent-gold)]" />
               <p className="mt-6 text-lg sm:text-xl text-white/85 leading-relaxed max-w-xl">
-                Premium Mallu escort service across South India. Outcall to your hotel or your place—Kochi, Trivandrum, Bangalore, Chennai, Hyderabad and more.
+                Premium Mallu escort service across South India. Outcall to your hotel or your place—Kochi, Bangalore, Chennai, Hyderabad and more.
               </p>
             </div>
           </div>
@@ -263,7 +257,7 @@ export default function MalluEscortsPage() {
         <div className="mx-auto max-w-4xl text-center">
           <p className="text-base sm:text-lg text-white/80 leading-relaxed">
             <strong className="text-white">Mallu escorts</strong> and escort service in{" "}
-            <strong className="text-white">Kochi</strong>, <strong className="text-white">Trivandrum</strong>,{" "}
+            <strong className="text-white">Kochi</strong>,{" "}
             <strong className="text-white">Bangalore</strong>, Chennai, Hyderabad and across South India. Malayalam-speaking companions. Outcall to your hotel or place. Discreet, verified, pay when you meet.
           </p>
           <div className="mt-4 flex flex-wrap justify-center gap-4 text-sm">
@@ -299,7 +293,7 @@ export default function MalluEscortsPage() {
               Looking for Mallu escorts? You&apos;ve found South India&apos;s trusted Mallu escort service.
             </h2>
             <p className="text-base sm:text-lg leading-relaxed text-white/85 mb-4">
-              Kerala&apos;s charm—Mallu escorts who are easy to talk to and great company. Most of our bookings are from people in town for work—staying at a hotel in <strong className="text-white">Kochi</strong>, <strong className="text-white">Trivandrum</strong>, or <strong className="text-white">Bangalore</strong>—or locals who want company for a dinner or an event. We don&apos;t do the &quot;pay first and hope someone shows up&quot; thing. You tell us your city/area, what kind of evening you have in mind, and when. We suggest someone who can reach you without a fuss.
+              Kerala&apos;s charm—Mallu escorts who are easy to talk to and great company. Most of our bookings are from people in town for work—staying at a hotel in <strong className="text-white">Kochi</strong> or <strong className="text-white">Bangalore</strong>—or locals who want company for a dinner or an event. We don&apos;t do the &quot;pay first and hope someone shows up&quot; thing. You tell us your city/area, what kind of evening you have in mind, and when. We suggest someone who can reach you without a fuss.
             </p>
             <p className="text-base sm:text-lg leading-relaxed text-white/85 mb-4">
               Outcall to your hotel or your place is the norm. Discretion is non-negotiable. We don't share your number; the girls don't post or talk about clients. Payment when she arrives—cash or UPI. For regular, housewife and college-girl profiles we don't ask for advance; we just need hotel proof and your room details if you're at a hotel. You give her name at reception before she starts. For models, artists, celebrity and actress we take a small advance; the rest when she's there.
@@ -343,7 +337,7 @@ export default function MalluEscortsPage() {
               Popular Cities for Mallu Escorts
             </h2>
             <p className="text-white/70 max-w-2xl mx-auto">
-              We cover Kochi, Trivandrum, Bangalore, Chennai, Hyderabad, and more across South India. Tell us your city and area when you book and we&apos;ll fix someone who can reach you on time.
+              We cover Kochi, Bangalore, Chennai, Hyderabad, and more across South India. Tell us your city and area when you book and we&apos;ll fix someone who can reach you on time.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
@@ -376,7 +370,7 @@ export default function MalluEscortsPage() {
               ))}
             </p>
             <p className="text-white/60 text-sm text-center mt-4 max-w-xl mx-auto">
-              Kochi and Trivandrum get the most bookings in Kerala. Bangalore, Chennai and Hyderabad are popular with business travelers and locals. Wherever you are, give us the city and area and we&apos;ll sort it.
+              Kochi gets the most bookings in Kerala. Bangalore, Chennai and Hyderabad are popular with business travelers and locals. Wherever you are, give us the city and area and we&apos;ll sort it.
             </p>
           </div>
         </div>
@@ -678,7 +672,7 @@ export default function MalluEscortsPage() {
           </div>
           <div className="rounded-2xl border border-white/10 bg-black/40 p-6 sm:p-8 space-y-4">
             <p className="text-white/75">
-              <strong className="text-white">Same-day:</strong> Message as early as you can. We usually reply within 1–2 hours; we&apos;ll tell you who&apos;s free and can reach you. Popular in Kochi, Trivandrum, Bangalore, Chennai.
+              <strong className="text-white">Same-day:</strong> Message as early as you can. We usually reply within 1–2 hours; we&apos;ll tell you who&apos;s free and can reach you. Popular in Kochi, Bangalore, Chennai.
             </p>
             <p className="text-white/75">
               <strong className="text-white">Advance:</strong> For full-night, events, or outstation trips, book a day or two ahead so we can confirm the right Mallu escort and timing.
@@ -715,7 +709,7 @@ export default function MalluEscortsPage() {
             </Link>
             <Link href="/kannada-escorts" className="rounded-xl border border-white/10 bg-black/30 p-5 hover:border-[var(--accent-gold)]/40 transition-colors text-center">
               <span className="text-lg font-bold text-[var(--accent-gold)]">Kannada Escorts</span>
-              <p className="text-sm text-white/75 mt-2">Kannada-speaking companions in Bangalore, Mysore & more</p>
+              <p className="text-sm text-white/75 mt-2">Kannada-speaking companions in Bangalore & more</p>
             </Link>
           </div>
         </div>

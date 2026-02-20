@@ -124,10 +124,6 @@ const POPULAR_CITIES = [
 ];
 
 const MORE_CITIES = [
-  { name: "Trivandrum", slug: "trivandrum-escorts" },
-  { name: "Vijayawada", slug: "vijayawada-escorts" },
-  { name: "Mysore", slug: "mysore-escorts" },
-  { name: "Pondicherry", slug: "pondicherry-escorts" },
 ];
 
 const ESCORT_TYPES = [
@@ -186,7 +182,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "What cities do you cover for model escorts?",
-    a: "We cover Chennai, Bangalore, Hyderabad, Kochi, Coimbatore, Madurai, Trivandrum, Vijayawada, Mysore, Pondicherry and more across South India. Tell us your city and area when you book, and we'll suggest who's available and can reach you on time.",
+    a: "We cover Chennai, Bangalore, Hyderabad, Kochi, Coimbatore, Madurai and more across South India. Tell us your city and area when you book, and we'll suggest who's available and can reach you on time.",
   },
   {
     q: "Are model escorts good for first-time bookings?",
@@ -477,22 +473,24 @@ export default function ModelsEscortsPage() {
               </Link>
             ))}
           </div>
-          <div className="rounded-xl border border-white/10 bg-black/30 px-6 py-5 text-center">
-            <p className="text-center text-white/70">
-              Also available in{" "}
-              {MORE_CITIES.map((city, i) => (
-                <span key={city.slug}>
-                  <Link
-                    href={`/${city.slug}`}
-                    className="text-white/85 hover:text-[var(--accent-gold)] hover:underline transition-colors"
-                  >
-                    {city.name}
-                  </Link>
-                  {i < MORE_CITIES.length - 1 ? ", " : ""}
-                </span>
-              ))}
-            </p>
-          </div>
+          {MORE_CITIES.length > 0 && (
+            <div className="rounded-xl border border-white/10 bg-black/30 px-6 py-5 text-center">
+              <p className="text-center text-white/70">
+                Also available in{" "}
+                {MORE_CITIES.map((city, i) => (
+                  <span key={city.slug}>
+                    <Link
+                      href={`/${city.slug}`}
+                      className="text-white/85 hover:text-[var(--accent-gold)] hover:underline transition-colors"
+                    >
+                      {city.name}
+                    </Link>
+                    {i < MORE_CITIES.length - 1 ? ", " : ""}
+                  </span>
+                ))}
+              </p>
+            </div>
+          )}
         </div>
       </section>
 

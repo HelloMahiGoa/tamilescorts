@@ -107,16 +107,16 @@ const TRUST_ITEMS = [
 ];
 
 const POPULAR_AREAS = [
-  { name: "Marine Drive", slug: "marine-drive", desc: "Waterfront & hotels" },
-  { name: "Fort Kochi", slug: "fort-kochi", desc: "Heritage & stays" },
-  { name: "MG Road", slug: "mg-road", desc: "Ernakulam central" },
-  { name: "Edappally", slug: "edappally", desc: "Mall & hotels" },
-  { name: "Kakkanad", slug: "kakkanad", desc: "IT & corporate" },
-  { name: "Ernakulam", slug: "ernakulam", desc: "Central Kochi" },
+  { name: "Marine Drive", slug: "marine-drive-escorts", desc: "Waterfront & hotels" },
+  { name: "Fort Kochi", slug: "fort-kochi-escorts", desc: "Heritage & stays" },
+  { name: "Ernakulam", slug: "ernakulam-escorts", desc: "Central Kochi" },
+  { name: "Edappally", slug: "edappally-escorts", desc: "Mall & hotels" },
+  { name: "Kakkanad", slug: "kakkanad-escorts", desc: "IT & corporate" },
+  { name: "Kalamassery", slug: "kalamassery-escorts", desc: "North Kochi & hotels" },
 ];
 
 const MORE_AREAS = [
-  { name: "Kalamassery", slug: "kalamassery" },
+  { name: "Vytilla", slug: "vytilla" },
   { name: "Thripunithura", slug: "thripunithura" },
   { name: "Aluva", slug: "aluva" },
   { name: "Mattancherry", slug: "mattancherry" },
@@ -349,7 +349,7 @@ export default function KochiEscortsPage() {
             {POPULAR_AREAS.map((area) => (
               <Link
                 key={area.slug}
-                href={`/${area.slug}-escorts`}
+                href={`/${area.slug}`}
                 className="block rounded-xl border border-white/10 bg-white/[0.03] p-5 hover:border-[var(--accent-gold)]/40 hover:bg-white/[0.06] transition-colors"
               >
                 <h3 className="text-lg font-bold text-white">{area.name}</h3>

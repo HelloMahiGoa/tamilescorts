@@ -8,10 +8,6 @@ const CITIES = [
   "Kochi",
   "Coimbatore",
   "Madurai",
-  "Trivandrum",
-  "Vijayawada",
-  "Mysore",
-  "Pondicherry",
 ];
 
 function cityToSlug(city: string) {

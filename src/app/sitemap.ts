@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/categories`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
   ];
 
-  const citySlugs = ["chennai-escorts", "bangalore-escorts", "hyderabad-escorts", "kochi-escorts", "coimbatore-escorts", "madurai-escorts", "trivandrum-escorts", "vijayawada-escorts", "mysore-escorts", "pondicherry-escorts"];
+  const citySlugs = ["chennai-escorts", "bangalore-escorts", "hyderabad-escorts", "kochi-escorts", "coimbatore-escorts", "madurai-escorts"];
   const cityUrls: MetadataRoute.Sitemap = citySlugs.map((slug) => ({
     url: `${base}/${slug}`,
     lastModified: now,

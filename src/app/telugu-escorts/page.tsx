@@ -7,9 +7,9 @@ import type { CategorySlug } from "@/lib/categories";
 const base = getBaseUrl();
 const url = `${base}/telugu-escorts`;
 
-const metaTitle = "Telugu Escorts | Premium Telugu Escorts in Hyderabad, Vijayawada, Chennai & Bangalore";
+const metaTitle = "Telugu Escorts | Premium Telugu Escorts in Hyderabad, Chennai & Bangalore";
 const metaDescription =
-  "Telugu escorts and escort service across South India. Outcall to your hotel or place in Hyderabad, Vijayawada, Chennai, Bangalore, Coimbatore, Madurai. Discreet, verified. Regular, housewife, models, artists, celebrity, actress. Pay when you meet.";
+  "Telugu escorts and escort service across South India. Outcall to your hotel or place in Hyderabad, Chennai, Bangalore, Coimbatore, Madurai. Discreet, verified. Regular, housewife, models, artists, celebrity, actress. Pay when you meet.";
 
 function buildTeluguJsonLd() {
   const localBusinessId = `${url}#localbusiness`;
@@ -38,13 +38,12 @@ function buildTeluguJsonLd() {
       "@id": localBusinessId,
       name: "Telugu Escorts",
       description:
-        "Premium Telugu escort service across South India. Outcall to Hyderabad, Vijayawada, Chennai, Bangalore, Coimbatore, Madurai. Discreet, verified companions.",
+        "Premium Telugu escort service across South India. Outcall to Hyderabad, Chennai, Bangalore, Coimbatore, Madurai. Discreet, verified companions.",
       url,
       image: `${base}/images/2.avif`,
       priceRange: "₹₹ - ₹₹₹₹₹",
       areaServed: [
         { "@type": "City", name: "Hyderabad" },
-        { "@type": "City", name: "Vijayawada" },
         { "@type": "City", name: "Chennai" },
         { "@type": "City", name: "Bangalore" },
         { "@type": "City", name: "Coimbatore" },
@@ -70,7 +69,6 @@ export const metadata: Metadata = {
     "Telugu escorts",
     "Telugu escort service",
     "Telugu escorts Hyderabad",
-    "Telugu escorts Vijayawada",
     "Telugu escorts Chennai",
     "Telugu escorts Bangalore",
     "Telugu escorts Coimbatore",
@@ -115,7 +113,6 @@ const TRUST_ITEMS = [
 
 const POPULAR_CITIES = [
   { name: "Hyderabad", slug: "hyderabad-escorts", desc: "Telangana capital" },
-  { name: "Vijayawada", slug: "vijayawada-escorts", desc: "Andhra business hub" },
   { name: "Chennai", slug: "chennai-escorts", desc: "Capital of Tamil Nadu" },
   { name: "Bangalore", slug: "bangalore-escorts", desc: "IT hub & cosmopolitan" },
   { name: "Coimbatore", slug: "coimbatore-escorts", desc: "Industrial city" },
@@ -124,9 +121,6 @@ const POPULAR_CITIES = [
 
 const MORE_CITIES = [
   { name: "Kochi", slug: "kochi-escorts" },
-  { name: "Trivandrum", slug: "trivandrum-escorts" },
-  { name: "Mysore", slug: "mysore-escorts" },
-  { name: "Pondicherry", slug: "pondicherry-escorts" },
 ];
 
 const HOW_IT_WORKS = [
@@ -192,7 +186,7 @@ const WHO_BOOKS = [
   },
   {
     title: "Locals",
-    body: "Living in Hyderabad, Vijayawada, Chennai, Bangalore or elsewhere and want company for an evening—dinner, event, or just a few hours. Same process: you tell us area, when, and category; we fix someone who shows up.",
+    body: "Living in Hyderabad, Chennai, Bangalore or elsewhere and want company for an evening—dinner, event, or just a few hours. Same process: you tell us area, when, and category; we fix someone who shows up.",
   },
   {
     title: "Events & client dinners",
@@ -222,7 +216,7 @@ const WHAT_TO_EXPECT = [
 const FAQ_ITEMS = [
   {
     q: "What cities do you cover for Telugu escorts?",
-    a: "We cover Hyderabad, Vijayawada, Chennai, Bangalore, Coimbatore, Madurai, Kochi, Trivandrum, Mysore, Pondicherry and more across South India. Tell us your city and area when you book and we'll fix someone who can reach you on time.",
+    a: "We cover Hyderabad, Chennai, Bangalore, Coimbatore, Madurai, Kochi and more across South India. Tell us your city and area when you book and we'll fix someone who can reach you on time.",
   },
   {
     q: "Do I need to pay advance?",
@@ -359,7 +353,7 @@ export default function TeluguEscortsPage() {
               <div className="mt-6 h-px w-16 bg-[var(--accent-gold)]" />
               <p className="mt-6 text-lg sm:text-xl text-white/85 leading-relaxed max-w-xl">
                 Premium Telugu escort service across South India. Outcall to your hotel or your place—
-                Hyderabad, Vijayawada, Chennai, Bangalore, Coimbatore, Madurai and more.
+                Hyderabad, Chennai, Bangalore, Coimbatore, Madurai and more.
               </p>
             </div>
           </div>
@@ -389,7 +383,6 @@ export default function TeluguEscortsPage() {
           <p className="text-base sm:text-lg text-white/80 leading-relaxed">
             <strong className="text-white">Telugu escorts</strong> and escort service in{" "}
             <strong className="text-white">Hyderabad</strong>,{" "}
-            <strong className="text-white">Vijayawada</strong>,{" "}
             <strong className="text-white">Chennai</strong>, Bangalore, Coimbatore and across South
             India. Telugu-speaking companions. Outcall to your hotel or place. Discreet, verified, pay
             when you meet.
@@ -429,7 +422,6 @@ export default function TeluguEscortsPage() {
             <p className="text-base sm:text-lg leading-relaxed text-white/85 mb-4">
               Many of our bookings are from people in town for work—staying at a hotel in{" "}
               <strong className="text-white">Hyderabad</strong>,{" "}
-              <strong className="text-white">Vijayawada</strong>, or{" "}
               <strong className="text-white">Chennai</strong>—or locals who want company for a dinner or
               an event. We don&apos;t do the &quot;pay first and hope someone shows up&quot; thing. You
               tell us your city/area, what kind of evening you have in mind, and when. We suggest someone
@@ -489,7 +481,7 @@ export default function TeluguEscortsPage() {
               Popular Cities for Telugu Escorts
             </h2>
             <p className="text-white/70 max-w-2xl mx-auto">
-              We cover Hyderabad, Vijayawada, Chennai, Bangalore, Coimbatore, Madurai and more across South
+              We cover Hyderabad, Chennai, Bangalore, Coimbatore, Madurai and more across South
               India. Tell us your city and area when you book and we&apos;ll fix someone who can reach you
               on time.
             </p>
@@ -524,7 +516,7 @@ export default function TeluguEscortsPage() {
               ))}
             </p>
             <p className="text-white/60 text-sm text-center mt-4 max-w-xl mx-auto">
-              Hyderabad and Vijayawada get the most Telugu bookings. Chennai, Bangalore and Coimbatore are
+              Hyderabad gets the most Telugu bookings. Chennai, Bangalore and Coimbatore are
               popular with business travelers and locals. Wherever you are, give us the city and area and
               we&apos;ll sort it.
             </p>
@@ -645,7 +637,7 @@ export default function TeluguEscortsPage() {
                 All our Telugu escorts speak Telugu and English. Many are multilingual. If you want someone
                 who can hold a conversation in Telugu—for a family function, a dinner where everyone&apos;s
                 speaking Telugu, or just because you&apos;re more comfortable—tell us when you book. We&apos;ll
-                suggest who fits. It&apos;s something clients ask for often in Hyderabad and Vijayawada.
+                suggest who fits. It&apos;s something clients ask for often in Hyderabad.
               </p>
             </div>
           </div>
@@ -871,7 +863,7 @@ export default function TeluguEscortsPage() {
           </div>
           <div className="rounded-2xl border border-white/10 bg-black/40 p-6 sm:p-8 space-y-4">
             <p className="text-white/75">
-              <strong className="text-white">Same-day:</strong> Message as early as you can. We usually reply within 1–2 hours; we&apos;ll tell you who&apos;s free and can reach you. Popular in Hyderabad, Vijayawada, Chennai, Bangalore.
+              <strong className="text-white">Same-day:</strong> Message as early as you can. We usually reply within 1–2 hours; we&apos;ll tell you who&apos;s free and can reach you. Popular in Hyderabad, Chennai, Bangalore.
             </p>
             <p className="text-white/75">
               <strong className="text-white">Advance:</strong> For full-night, events, or outstation trips, book a day or two ahead so we can confirm the right Telugu escort and timing.
@@ -908,7 +900,7 @@ export default function TeluguEscortsPage() {
             </Link>
             <Link href="/kannada-escorts" className="rounded-xl border border-white/10 bg-black/30 p-5 hover:border-[var(--accent-gold)]/40 transition-colors text-center">
               <span className="text-lg font-bold text-[var(--accent-gold)]">Kannada Escorts</span>
-              <p className="text-sm text-white/75 mt-2">Kannada-speaking companions in Bangalore, Mysore & more</p>
+              <p className="text-sm text-white/75 mt-2">Kannada-speaking companions in Bangalore & more</p>
             </Link>
           </div>
         </div>

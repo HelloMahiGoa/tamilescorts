@@ -5,7 +5,7 @@ import type { EscortType } from "@/lib/profileData";
 const TYPE_DESCRIPTIONS: Record<EscortType, string> = {
   tamil: "Browse Tamil escorts by category. From Chennai to Coimbatore, find someone who speaks your language and gets your culture.",
   mallu: "Kerala's charm—Mallu escorts who are easy to talk to and great company. Choose a category to see available profiles.",
-  telugu: "Telugu-speaking companions for Hyderabad, Vijayawada and beyond. Pick a category to browse profiles.",
+  telugu: "Telugu-speaking companions for Hyderabad and beyond. Pick a category to browse profiles.",
   kannada: "Bangalore and Karnataka—Kannada escorts who know how to make an evening feel relaxed. Browse by category.",
 };
 

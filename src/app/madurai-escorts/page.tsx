@@ -107,7 +107,7 @@ const TRUST_ITEMS = [
 
 const POPULAR_AREAS = [
   { name: "KK Nagar", slug: "kk-nagar", desc: "Central & hotels" },
-  { name: "Anna Nagar", slug: "anna-nagar", desc: "Residential & stays" },
+  { name: "Anna Nagar", slug: "madurai-anna-nagar", desc: "Residential & stays" },
   { name: "Koodal Nagar", slug: "koodal-nagar", desc: "Commercial hub" },
   { name: "Goripalayam", slug: "goripalayam", desc: "Near temple" },
   { name: "Simakkal", slug: "simakkal", desc: "Central Madurai" },
@@ -911,7 +911,7 @@ export default function MaduraiEscortsPage() {
                 <Link href="/kk-nagar-escorts" className="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-[var(--accent-gold)]/15 text-[var(--accent-gold)] border border-[var(--accent-gold)]/30 hover:bg-[var(--accent-gold)]/25 transition-colors">
                   KK Nagar
                 </Link>
-                <Link href="/anna-nagar-escorts" className="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-[var(--accent-gold)]/15 text-[var(--accent-gold)] border border-[var(--accent-gold)]/30 hover:bg-[var(--accent-gold)]/25 transition-colors">
+                <Link href="/madurai-anna-nagar-escorts" className="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-[var(--accent-gold)]/15 text-[var(--accent-gold)] border border-[var(--accent-gold)]/30 hover:bg-[var(--accent-gold)]/25 transition-colors">
                   Anna Nagar
                 </Link>
               </div>
@@ -960,7 +960,7 @@ export default function MaduraiEscortsPage() {
               <div className="flex flex-wrap gap-2">
                 {[
                   { name: "KK Nagar", slug: "kk-nagar-escorts" },
-                  { name: "Anna Nagar", slug: "anna-nagar-escorts" },
+                  { name: "Anna Nagar", slug: "madurai-anna-nagar-escorts" },
                   { name: "Koodal Nagar", slug: "koodal-nagar-escorts" },
                   { name: "Goripalayam", slug: "goripalayam-escorts" },
                   { name: "Simakkal", slug: "simakkal-escorts" },
