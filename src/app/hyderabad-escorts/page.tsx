@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import DailyProfilesSection from "@/components/DailyProfilesSection";
 import { getBaseUrl } from "@/lib/site";
 import { getCategoryPagePath, type CategorySlug } from "@/lib/categories";
+import DailyProfilesSection from "@/components/DailyProfilesSection";
 
 const base = getBaseUrl();
 const url = `${base}/hyderabad-escorts`;

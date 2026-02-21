@@ -500,14 +500,4 @@ html {
   pointer-events: none;
 }
 
-/* PDF Gallery Swiper overrides */
-.pdf-gallery-swiper .swiper-pagination-progressbar {
-  background: rgba(255, 255, 255, 0.1);
-}
-.pdf-gallery-swiper .swiper-pagination-bullets {
-  bottom: 1rem;
-}
-.pdf-gallery-swiper .swiper-pagination-bullet {
-  transition: all 0.2s ease;
-}
 
