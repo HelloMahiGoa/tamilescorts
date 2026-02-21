@@ -49,7 +49,7 @@ export default function PdfFlipbook({ pdfUrl, name }: PdfFlipbookProps) {
           canvas.height = viewport.height;
           const ctx = canvas.getContext("2d");
           if (!ctx) continue;
-          await page.render({ canvasContext: ctx, viewport }).promise;
+          await page.render({ canvas, canvasContext: ctx, viewport }).promise;
           images.push(canvas.toDataURL("image/jpeg", 0.9));
         }
 
@@ -144,11 +144,24 @@ export default function PdfFlipbook({ pdfUrl, name }: PdfFlipbookProps) {
             width={width}
             height={height}
             size="fixed"
+            minWidth={width}
+            maxWidth={width}
+            minHeight={height}
+            maxHeight={height}
+            startPage={0}
+            startZIndex={0}
+            autoSize={false}
+            maxShadowOpacity={1}
             drawShadow
             flippingTime={600}
             usePortrait
             showCover
             mobileScrollSupport={false}
+            clickEventForward={true}
+            useMouseEvents={true}
+            swipeDistance={30}
+            showPageCorners={true}
+            disableFlipByClick={false}
             className=""
             style={{}}
           >
