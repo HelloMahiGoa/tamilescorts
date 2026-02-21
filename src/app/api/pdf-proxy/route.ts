@@ -1,8 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 
+export const runtime = "edge";
+export const revalidate = 3600;
+
 /**
  * Proxies PDF requests to avoid CORS when loading from Supabase Storage in the browser.
- * Used by PdfThumbnail for client-side PDF.js rendering.
+ * Edge runtime + streaming for fast cold starts and quicker time-to-first-byte on Vercel.
  */
 export async function GET(request: NextRequest) {
   const url = request.nextUrl.searchParams.get("url");
@@ -26,7 +29,6 @@ export async function GET(request: NextRequest) {
   try {
     const res = await fetch(url, {
       headers: { "User-Agent": "TamilEscorts/1.0" },
-      next: { revalidate: 3600 },
     });
 
     if (!res.ok) {
@@ -37,12 +39,11 @@ export async function GET(request: NextRequest) {
     }
 
     const contentType = res.headers.get("content-type") || "application/pdf";
-    const buffer = await res.arrayBuffer();
 
-    return new NextResponse(buffer, {
+    return new NextResponse(res.body, {
       headers: {
         "Content-Type": contentType,
-        "Cache-Control": "public, max-age=3600, s-maxage=3600",
+        "Cache-Control": "public, max-age=3600, s-maxage=3600, stale-while-revalidate=86400",
       },
     });
   } catch (err) {
