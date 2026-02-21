@@ -254,6 +254,32 @@ html {
   }
 }
 
+@keyframes bounceSlow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes heroCtaPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(255, 215, 0, 0);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounceSlow 2s ease-in-out infinite;
+}
+
+.hero-cta-btn {
+  animation: heroCtaPulse 2.5s ease-in-out infinite;
+}
+
 .animate-slide-in {
   animation: slideIn 0.3s ease-out;
 }
@@ -472,5 +498,16 @@ html {
   border-color: transparent rgba(236, 72, 153, 0.5) transparent transparent;
   z-index: 1;
   pointer-events: none;
+}
+
+/* PDF Gallery Swiper overrides */
+.pdf-gallery-swiper .swiper-pagination-progressbar {
+  background: rgba(255, 255, 255, 0.1);
+}
+.pdf-gallery-swiper .swiper-pagination-bullets {
+  bottom: 1rem;
+}
+.pdf-gallery-swiper .swiper-pagination-bullet {
+  transition: all 0.2s ease;
 }
 
