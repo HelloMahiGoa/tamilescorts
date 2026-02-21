@@ -29,8 +29,7 @@ export default function PdfFlipbook({ pdfUrl, name }: PdfFlipbookProps) {
         setError(null);
         setUseFallback(false);
 
-        // Use webpack build to avoid worker/main version mismatch (hashOriginal.toHex errors)
-        const pdfjsLib = await import("pdfjs-dist/webpack.mjs");
+        const pdfjsLib = await import("pdfjs-dist");
         pdfjsLib.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.mjs`;
 
         const res = await fetch(pdfUrl);
