@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import DailyProfilesSection from "@/components/DailyProfilesSection";
 import { getBaseUrl } from "@/lib/site";
 import { getCategoryPagePath, type CategorySlug } from "@/lib/categories";
 
@@ -344,6 +345,8 @@ export default function ChennaiEscortsPage() {
           </div>
         </div>
       </section>
+
+      <DailyProfilesSection citySlug="chennai-escorts" />
 
       {/* Section 3: Popular Areas – card + label */}
       <section className="py-14 px-4 sm:px-6 lg:px-8 border-t border-white/10 bg-white/[0.02]">
