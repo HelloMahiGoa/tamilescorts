@@ -86,7 +86,7 @@ export async function POST(request: Request) {
 
     const supabase = createServiceRoleClient();
     const baseTime = Date.now().toString(36);
-    const rows = profiles.map((p, i) => {
+    const rows = profiles.map((p: ProfileInput, i: number) => {
       const baseSlug = p.slug || slugify(p.name);
       const slug = (baseSlug || "profile") + "-" + baseTime + (i > 0 ? "-" + i : "");
       return {
