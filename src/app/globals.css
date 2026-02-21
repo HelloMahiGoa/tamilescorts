@@ -38,6 +38,14 @@ html {
   font-family: var(--font-cormorant), Georgia, serif;
 }
 
+.font-playfair {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+.font-dancing {
+  font-family: var(--font-dancing), cursive;
+}
+
 /* Hide scrollbar but keep functionality */
 .scrollbar-hide {
   -ms-overflow-style: none;
@@ -288,6 +296,181 @@ html {
   );
   background-size: 200% 200%;
   animation: gradientOverlaySlide 8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Profile card animations */
+@keyframes profileCardReveal {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes profileImageReveal {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes profileGoldGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 1px rgba(255, 215, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 0 1px rgba(255, 215, 0, 0.4), 0 0 20px rgba(255, 215, 0, 0.08);
+  }
+}
+
+.profile-card-enter {
+  animation: profileCardReveal 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.profile-card-image-enter {
+  animation: profileImageReveal 0.6s ease-out 0.15s forwards;
+  opacity: 0;
+}
+
+.profile-card:hover .profile-card-image-zoom {
+  transform: scale(1.04);
+}
+
+.profile-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 215, 0, 0.15);
+}
+
+/* Bento grid scroll reveal */
+@keyframes bentoReveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.bento-card-enter {
+  animation: bentoReveal 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.bento-grid-inview .bento-card-enter {
+  animation-play-state: running;
+}
+
+/* Film strip horizontal scroll */
+.film-strip-border {
+  background-image: 
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 8px,
+      rgba(255,255,255,0.15) 8px,
+      rgba(255,255,255,0.15) 10px
+    );
+  background-size: 12px 100%;
+  background-position: 0 0, 0 100%;
+}
+
+.film-strip-top {
+  background: linear-gradient(90deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+  background-image: 
+    repeating-linear-gradient(
+      90deg,
+      #151515 0px,
+      #151515 4px,
+      #0a0a0a 4px,
+      #0a0a0a 12px
+    );
+  height: 14px;
+  box-shadow: 
+    0 2px 0 rgba(255, 215, 0, 0.15),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+.film-strip-bottom {
+  background: 
+    repeating-linear-gradient(
+      90deg,
+      #151515 0px,
+      #151515 4px,
+      #0a0a0a 4px,
+      #0a0a0a 12px
+    );
+  height: 14px;
+  box-shadow: 
+    0 -2px 0 rgba(255, 215, 0, 0.15),
+    inset 0 -1px 0 rgba(255,255,255,0.05);
+}
+
+@keyframes filmReveal {
+  from {
+    opacity: 0;
+    transform: translateX(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.film-card-enter {
+  animation: filmReveal 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Split card design */
+@keyframes splitCardReveal {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.split-card-enter {
+  animation: splitCardReveal 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Gradient pink card design */
+@keyframes gradientCardReveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.gradient-card-enter {
+  animation: gradientCardReveal 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.gradient-card-accent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 70px 70px 0;
+  border-color: transparent rgba(236, 72, 153, 0.5) transparent transparent;
+  z-index: 1;
   pointer-events: none;
 }
 
