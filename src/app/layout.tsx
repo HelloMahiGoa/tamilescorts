@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Noto_Sans, Cormorant_Garamond, Playfair_Display, Dancing_Script } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
+
+const GA_MEASUREMENT_ID = "G-N6H7ETSNQQ";
 
 const notoSans = Noto_Sans({
   variable: "--font-noto-sans",
@@ -48,6 +51,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${notoSans.variable} ${cormorant.variable} ${playfair.variable} ${dancingScript.variable}`} suppressHydrationWarning>
       <body className="min-h-screen antialiased">
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
         <Navigation />
         {children}
         <Footer />
