@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import { getBaseUrl } from "@/lib/site";
 import { getCategoryPagePath, type CategorySlug } from "@/lib/categories";
@@ -343,7 +344,9 @@ export default function MaduraiEscortsPage() {
         </div>
       </section>
 
-      <DailyProfilesSection citySlug="madurai-escorts" />
+      <Suspense fallback={null}>
+        <DailyProfilesSection citySlug="madurai-escorts" basePath="/madurai-escorts" />
+      </Suspense>
 
       {/* Section 3: Popular Areas */}
       <section className="py-14 px-4 sm:px-6 lg:px-8 border-t border-white/10 bg-white/[0.02]">

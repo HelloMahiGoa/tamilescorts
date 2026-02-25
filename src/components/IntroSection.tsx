@@ -2,8 +2,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useMemo } from "react";
-import { getProfilesByTypeAndCategory, type EscortType, type Category } from "@/lib/profileData";
+import { useState, useEffect } from "react";
+import type { Profile, EscortType, Category } from "@/lib/profileData";
+import ProfileImagePrivacyNotice from "@/components/ProfileImagePrivacyNotice";
 
 const TABS = [
   {
@@ -66,15 +67,33 @@ export default function IntroSection() {
   const [activeCategory, setActiveCategory] = useState<string | null>("Regular"); // Default to Regular
   const activeTabData = TABS.find((t) => t.id === activeTab) ?? TABS[0];
 
-  // Get profiles for the active tab and category - ensure stable order
-  const profiles = useMemo(() => {
-    if (!activeCategory) return [];
+  const [profiles, setProfiles] = useState<Profile[]>([]);
+
+  useEffect(() => {
+    if (!activeCategory) {
+      setProfiles([]);
+      return;
+    }
     const categorySlug = CATEGORY_TO_SLUG[activeCategory];
-    if (!categorySlug) return [];
-    const filtered = getProfilesByTypeAndCategory(activeTab as EscortType, categorySlug);
-    // Sort by id to ensure consistent order, then slice
-    // Show 8 profiles for all categories
-    return filtered.sort((a, b) => a.id.localeCompare(b.id)).slice(0, 8);
+    if (!categorySlug) {
+      setProfiles([]);
+      return;
+    }
+    fetch(`/api/category-profiles?type=${encodeURIComponent(activeTab)}&category=${encodeURIComponent(categorySlug)}`)
+      .then((res) => res.json())
+      .then((data: Profile[] | { error?: string }) => {
+        if (Array.isArray(data)) {
+          const sorted = data.sort((a, b) => a.id.localeCompare(b.id)).slice(0, 8);
+          setProfiles(sorted);
+        } else {
+          console.warn("[IntroSection] category-profiles API:", (data as { error?: string }).error ?? "Invalid response");
+          setProfiles([]);
+        }
+      })
+      .catch((err) => {
+        console.warn("[IntroSection] Failed to fetch profiles:", err);
+        setProfiles([]);
+      });
   }, [activeTab, activeCategory]);
 
   return (
@@ -354,6 +373,7 @@ export default function IntroSection() {
               <p className="mx-auto max-w-3xl text-lg text-white/80 leading-relaxed">
                 {CATEGORY_DESCRIPTIONS[activeCategory]}
               </p>
+              <ProfileImagePrivacyNotice className="mx-auto mt-6 max-w-3xl" />
               <div className="mt-8 grid grid-cols-2 gap-5 sm:gap-6 lg:grid-cols-4">
                 {profiles.length === 0 ? (
                   <div className="col-span-full py-8 text-center">

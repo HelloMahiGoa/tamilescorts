@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import ProfileCard from "@/components/ProfileCard";
 import ImageModal from "@/components/ImageModal";
+import ProfileImagePrivacyNotice from "@/components/ProfileImagePrivacyNotice";
 import type { Profile, EscortType, Category } from "@/lib/profileData";
 
 const TYPE_LABELS: Record<EscortType, string> = {
@@ -264,6 +265,9 @@ export default function ProfileDetailClient({
                     {profile.availability}
                   </span>
                 </div>
+
+                {/* Image privacy notice */}
+                <ProfileImagePrivacyNotice className="mb-6" />
               </div>
 
               {/* Pricing Section */}

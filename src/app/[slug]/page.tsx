@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 import { getCategoryByPageSlug, CATEGORY_PAGE_SLUGS } from "@/lib/categories";
 import { getTypeByPageSlug, TYPE_PAGE_SLUGS } from "@/lib/profileData";
 import CategoryPageContent from "@/components/CategoryPageContent";
@@ -239,7 +240,9 @@ export default async function SlugPage({ params }: PageProps) {
           </Link>
         </div>
 
-        <DailyProfilesSection citySlug={slug} />
+        <Suspense fallback={null}>
+          <DailyProfilesSection citySlug={slug} basePath={`/${slug}`} />
+        </Suspense>
       </section>
     </main>
   );
