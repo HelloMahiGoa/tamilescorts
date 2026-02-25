@@ -11,25 +11,25 @@ const TABS = [
     id: "tamil",
     label: "Tamil Escorts",
     description:
-      "Meet genuine Tamil escorts who bring warmth and culture to every moment. From Chennai to Coimbatore, find someone who gets you.",
+      "Tamil escorts in Chennai, Coimbatore, Madurai. Outcall to your hotel or place. Same deal: we keep it private, you pay when she arrives.",
   },
   {
     id: "mallu",
     label: "Mallu Escorts",
     description:
-      "Kerala’s charm, right here. Friendly, down-to-earth Mallu escorts for good conversation and memorable times—no fuss, just real connection.",
+      "Kerala’s charm, right here. Friendly, down-to-earth Mallu escorts for good conversation and memorable times—Tell us your city and when you need someone.",
   },
   {
     id: "telugu",
     label: "Telugu Escorts",
     description:
-      "Telugu company that feels like home. Whether you’re in Hyderabad or elsewhere, connect with someone who’s easy to talk to and great to be around.",
+      "Telugu company that feels like home. Whether you’re in Hyderabad or elsewhere, connect with someone who’s easy to talk to and Outcall; you pay when she arrives.",
   },
   {
     id: "kannada",
     label: "Kannada Escorts",
     description:
-      "Bangalore and beyond—warm, grounded Kannada escorts who know how to make an evening feel relaxed and special. Real people, real vibes.",
+      "Kannada escorts in Bangalore—Indiranagar, Koramangala, Whitefield. Same process: area, when, type. We fix someone who can reach you.",
   },
 ] as const;
 
@@ -37,11 +37,11 @@ const CATEGORIES = ["Regular", "Housewife", "College Girls", "Models", "Artists"
 
 const CATEGORY_DESCRIPTIONS: Record<string, string> = {
   Regular:
-    "Our regular escorts are everyday, approachable people who are easy to talk to and great company. There’s no pretense here—just real people you can relax with, whether you want a quiet dinner, a night out, or someone to talk to. They come from all walks of life and know how to make you feel at ease. Many of our clients come back again and again because the vibe is natural and the connection feels genuine.",
+    "Everyday people who are easy to talk to and good company. No glamour act. There’s no pretense here—just real people you can relax with, whether you want a quiet dinner, a night out, or someone to talk to. They come from all walks of life and know how to make you feel at ease. Many of our clients come back again and again because the vibe is natural and the connection feels genuine.",
   Artists:
     "Creative souls from the arts—dancers, musicians, and performers—who bring something extra to every meeting. If you enjoy culture, conversation, and a bit of flair, you’ll feel right at home here. These escorts often have stories from the stage or studio and love talking about their craft. Whether you’re into music, dance, or visual arts, you’ll find someone who gets it and can make an evening feel more than ordinary.",
   Celebrity:
-    "High-profile escorts who understand discretion and how to keep things special. They’re used to attention and know how to handle it with grace. Ideal when you want someone who gets the spotlight, values privacy, and can accompany you to events or private moments without any fuss. Everything stays between you and them, and the focus is on making your time together memorable and stress-free.",
+    "High-profile, used to attention. They don't talk about clients or post about where they've been. They’re used to attention and know how to handle it with grace. Ideal when you want someone who gets the spotlight, values privacy, and can accompany you to events or private moments without any fuss. Everything stays between you and them, and the focus is on making your time together memorable and stress-free.",
   Models:
     "Fashion-forward, photogenic escorts with a strong presence and an eye for style. They’re used to being in front of the camera and in social settings, so they’re confident and easy to be around. Perfect for events, dinners, or when you simply want someone who turns heads and knows how to carry themselves. Many have worked in fashion or modelling and bring that polish and poise to every meeting.",
   Housewife:
@@ -49,7 +49,7 @@ const CATEGORY_DESCRIPTIONS: Record<string, string> = {
   "College Girls":
     "Young, fresh, and full of energy—students and young professionals who are fun to be around and up for a good time. They bring a lively, modern outlook and are usually easy to chat with about anything from studies to travel to nightlife. If you’re looking for someone youthful, open-minded, and easygoing, this category has plenty to offer. Perfect for casual outings, events, or simply someone to spend time with.",
   Actress:
-    "Screen and stage talent—expressive, confident, and used to making every moment feel like a scene worth remembering. These escorts often have training in performance and know how to hold a conversation, read the room, and keep things interesting. Whether you want someone for a high-profile event or a private evening, they bring presence and charm. Many clients love the blend of creativity and discretion that comes with this category.",
+    "Screen and stage talent—expressive, confident, and used to making every moment feel like a scene worth remembering. These escorts often have training in performance and know how to hold a conversation, read the room, and keep things interesting. Whether you want someone for a high-profile event or a private evening, they bring presence and charm. Advance usually required; rest when she arrives. Same privacy: we don't give out your details.",
 };
 
 const CATEGORY_TO_SLUG: Record<string, Category> = {

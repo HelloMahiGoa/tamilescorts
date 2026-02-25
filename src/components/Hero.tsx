@@ -103,6 +103,9 @@ export default function Hero() {
               </svg>
             </button>
           </div>
+          <p className="mt-2 text-center text-[10px] text-white/40 uppercase tracking-wider">
+            Last updated: {new Date().toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}
+          </p>
           <div className="mt-2 flex justify-center gap-1.5">
             {CITIES.map((_, i) => (
               <button
@@ -182,6 +185,9 @@ export default function Hero() {
                 South India
               </span>
             </div>
+            <p className="mt-4 text-[10px] text-white/40 uppercase tracking-wider">
+              Last updated: {new Date().toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}
+            </p>
           </div>
 
           {/* Corner accents */}

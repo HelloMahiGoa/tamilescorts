@@ -9,9 +9,9 @@ import { getTypePagePath, type EscortType } from "@/lib/profileData";
 import { getBaseUrl } from "@/lib/site";
 import type { Metadata } from "next";
 
-const SITE_TITLE = "Tamil Escorts | Chennai, Bangalore & South India – Premium Companions";
+const SITE_TITLE = "Tamil Escorts | Chennai, Bangalore & South India";
 const SITE_DESCRIPTION =
-  "Premium Tamil & South Indian escorts in Chennai, Bangalore, Hyderabad, Kochi and more. Discreet, verified profiles. Book companions for dinner, events & travel. 24/7.";
+  "Tamil and South Indian escorts in Chennai, Bangalore, Hyderabad, Kochi and more. Book companions for dinner, events and travel. We keep it private. 24/7.";
 
 export const metadata: Metadata = {
   title: SITE_TITLE,
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "Hyderabad escorts",
     "Kochi escorts",
     "escort service Chennai",
-    "discreet escorts South India",
+    "South Indian escorts",
   ],
   openGraph: {
     type: "website",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         url: `${getBaseUrl()}/images/hero-desktop.avif`,
         width: 1200,
         height: 630,
-        alt: "Tamil Escorts - Premium South Indian Companions",
+        alt: "Tamil Escorts – South Indian companions",
       },
     ],
   },
@@ -55,20 +55,20 @@ export const metadata: Metadata = {
 };
 
 const FAQ_ITEMS = [
-  { q: "How do I contact an escort?", a: "Each profile has a Telegram button. Simply click it to start a conversation directly with the escort. All communication is private and discreet." },
-  { q: "Are the profiles verified?", a: "Yes, we verify all profiles to ensure authenticity. Look for the verified badge on profiles that have been checked." },
-  { q: "Is my information kept private?", a: "Absolutely. We take privacy seriously. Your conversations and interactions remain completely confidential." },
-  { q: "What cities do you cover?", a: "We have escorts available in major South Indian cities including Chennai, Bangalore, Hyderabad, Kochi, and many more." },
-  { q: "How do I know if someone is available?", a: "Each profile shows availability status. You can also check directly via Telegram - most escorts respond within 30 minutes to 2 hours." },
-  { q: "What languages do your companions speak?", a: "Our companions speak various South Indian languages including Tamil, Malayalam, Kannada, Telugu, and English. Many are multilingual." },
-  { q: "How far in advance should I book?", a: "We recommend booking at least 2-4 hours in advance, though we can often accommodate same-day requests. For special events, advance booking is recommended." },
-  { q: "Can I request a specific companion?", a: "Absolutely! If you've met someone before or have seen a profile you like, just let us know and we'll do our best to arrange for that companion if they're available." },
-  { q: "What if I need to cancel or reschedule?", a: "We understand that plans can change. Contact us as soon as possible, and we'll work with you to reschedule or cancel. We're flexible and understanding." },
-  { q: "Do you offer services for couples?", a: "Yes, we can arrange companions for couples as well. Just let us know your preferences and we'll find the perfect match." },
-  { q: "What payment methods do you accept?", a: "We accept cash payments for discretion and security. Payment is typically made after the service is completed. We never ask for advance payments or deposits." },
-  { q: "Are your companions available for travel?", a: "Yes, many of our companions are available for travel, business trips, or extended engagements. This can be discussed when you contact us." },
-  { q: "How do I know the companion will show up?", a: "We have a strict policy of reliability. All our companions are professional and punctual. We'll provide confirmation details and keep you updated throughout." },
-  { q: "Do you offer both incall and outcall?", a: "Yes. We offer outcall (companion comes to your location—hotel, home, or venue) and can arrange incall where available. Tell us your preference when you book and we'll match you accordingly." },
+  { q: "How do I contact an escort?", a: "Each profile has a Telegram button. Click it to start a conversation. We don't share your number; everything goes through us." },
+  { q: "Are the profiles verified?", a: "We check profiles before we list them. You get real photos and real people. Look for the verified badge on profiles we've checked." },
+  { q: "Is my information kept private?", a: "Yes. We don't share your number or store your details. Your booking stays between you and us." },
+  { q: "What cities do you cover?", a: "Chennai, Bangalore, Hyderabad, Kochi, Coimbatore, Madurai and sometimes other South Indian cities. Ask when you message." },
+  { q: "How do I know if someone is available?", a: "Profiles show availability. You can also message us on Telegram—we usually reply within a few hours and tell you who's free." },
+  { q: "What languages do your companions speak?", a: "Tamil, Malayalam, Kannada, Telugu and English. Many speak more than one. Tell us your preference when you book." },
+  { q: "How far in advance should I book?", a: "Same-day often works. For busy times or full-night we'd say a few hours' notice. For events or travel, give us a bit more notice." },
+  { q: "Can I request a specific companion?", a: "Yes. If you've met someone before or like a profile, tell us and we'll see if they're available." },
+  { q: "What if I need to cancel or reschedule?", a: "Plans change. Tell us as soon as you can and we'll reschedule or cancel. We don't charge cancellation fees for regular bookings." },
+  { q: "Do you offer services for couples?", a: "Yes. Tell us what you're looking for and we'll see who's available." },
+  { q: "What payment methods do you accept?", a: "Cash or UPI when she arrives. We don't ask for advance for regular and housewife profiles." },
+  { q: "Are your companions available for travel?", a: "Some are. Outstation (Goa, Munnar, etc.) needs advance notice. Ask when you message." },
+  { q: "How do I know the companion will show up?", a: "We confirm who's coming and when. We'll keep you updated. If something isn't right on the day, tell us afterwards." },
+  { q: "Do you offer both incall and outcall?", a: "Outcall is standard—she comes to your hotel or place. We can arrange incall where available. Tell us your preference when you book." },
 ];
 
 function buildHomepageJsonLd() {
@@ -132,9 +132,7 @@ export default function Home() {
       <section className="relative bg-black py-8 overflow-hidden" aria-label="About our service">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <p className="text-center text-lg sm:text-xl text-white/80 leading-relaxed">
-            <strong className="text-white">Tamil Escorts</strong> and South Indian escort services in{" "}
-            <strong className="text-white">Chennai</strong>, <strong className="text-white">Bangalore</strong>,{" "}
-            <strong className="text-white">Hyderabad</strong>, <strong className="text-white">Kochi</strong>, Coimbatore and Madurai. Book a discreet companion for dinner, events, travel or a relaxed evening. Verified profiles, cash or UPI, no advance for regular bookings.
+            Tamil Escorts and South Indian escort services in Chennai, Bangalore, Hyderabad, Kochi, Coimbatore and Madurai. Book a companion for dinner, events, travel or an evening. We keep it private. Cash or UPI, no advance for regular bookings.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm">
             <Link href="/blog" className="text-[var(--accent-gold)] hover:underline">
@@ -180,7 +178,7 @@ export default function Home() {
               imageFirst: false,
               paragraphs: [
                 "Most of our Tamil escort bookings are in Chennai—Nungambakkam, T Nagar, OMR, Guindy, Adyar. We get a lot of out-of-town clients who're here for work and don't want to eat alone in a hotel, and a lot of locals who want company for a dinner or an event without the hassle of dating apps. They're not all looking for a \u201Cmodel type.\u201D Many want someone who speaks Tamil, gets the culture, and can sit at a table or walk into a family function without sticking out. We've got regulars who book the same girl every time they're in town.",
-                "Outcall to your hotel or your place is the norm. We need your area, the kind of evening you have in mind (dinner, party, just a few hours), and when. We'll suggest someone who can reach you without a fuss. Discretion is non-negotiable—we don't share your number, and the girls don't post or talk about clients. If you're in Coimbatore, Madurai, or Trichy we can sometimes arrange there too; just ask when you message. Payment is when she reaches you—cash or UPI. For regular and housewife profiles we don't ask for advance; we just need hotel proof and your room details if it's a hotel booking.",
+                "Outcall to your hotel or your place is the norm. We need your area, the kind of evening you have in mind (dinner, party, just a few hours), and when. We'll suggest someone who can reach you. We don't share your number, and the women we work with don't post or talk about clients. If you're in Coimbatore, Madurai, or Trichy we can sometimes arrange there too; just ask when you message. Payment is when she reaches you—cash or UPI. For regular and housewife profiles we don't ask for advance; we just need hotel proof and your room details if it's a hotel booking.",
               ],
             },
             {
@@ -193,7 +191,7 @@ export default function Home() {
               imageFirst: true,
               paragraphs: [
                 "Mallu escorts on our platform are mostly in Kochi; we get requests from Calicut and other parts of Kerala too. What we hear from clients again and again is that they're easy to talk to—no airs, no drama. A lot of bookings are for dinner or a relaxed evening at the client's hotel; some want company for a wedding or a house party where everyone's speaking Malayalam. We've got girls who're fine with that. They don't feel like strangers in the room.",
-                "A fair share of Mallu escort bookings are for travel—a weekend in Goa, a couple of days in Munnar or Thekkady. We need a bit of notice for outstation; not everyone does it, but we have profiles who do. Same rules as everywhere: outcall to your place or hotel, discretion, pay when she arrives. If you're in Kerala for work or just passing through and want company that gets the culture, tell us your city and when you need someone. We'll see who's free and who fits what you're looking for.",
+                "A fair share of Mallu escort bookings are for travel—a weekend in Goa, a couple of days in Munnar or Thekkady. We need a bit of notice for outstation; not everyone does it, but we have profiles who do. Same rules: outcall to your place or hotel, we keep it private, you pay when she arrives. If you're in Kerala for work or just passing through and want company that gets the culture, tell us your city and when you need someone. We'll see who's free and who fits what you're looking for.",
               ],
             },
             {
@@ -206,7 +204,7 @@ export default function Home() {
               imageFirst: false,
               paragraphs: [
                 "Hyderabad is where most of our Telugu escort bookings happen—Banjara Hills, Jubilee Hills, Gachibowli, the usual hotel areas. We get a mix: locals who don't want the hassle of explaining themselves on a dating app, and out-of-town guys who're in the city for a few days and want company for dinner or an event. A lot of them want someone who can hold a conversation in Telugu if the room is full of it. We have profiles that work for high-end client dinners and ones that are more low-key—just someone to eat with and talk to.",
-                "Other Andhra cities come up too; we don't have as many girls there as in Hyderabad, but we can check when you ask. Outcall to your hotel or home is standard. You tell us the occasion, the timing, and what you're looking for (chatty, quiet, presentable for an event), and we'll suggest who's available. Payment when she reaches you—cash or UPI. No advance for regular and housewife categories; for models and above we take a small advance and the rest on arrival. Same discretion rules: we don't hand out your number, and what happens stays between you and her.",
+                "Other Andhra cities come up too; we don't have as many girls there as in Hyderabad, but we can check when you ask. Outcall to your hotel or home is standard. You tell us the occasion, the timing, and what you're looking for (chatty, quiet, good for an event), and we'll suggest who's available. You pay when she reaches you—cash or UPI. No advance for regular and housewife; for models and above we take a small advance and the rest on arrival. We don't give out your number; what happens stays between you and her.",
               ],
             },
             {
@@ -218,8 +216,8 @@ export default function Home() {
               accent: "slate",
               imageFirst: true,
               paragraphs: [
-                "Bangalore is the main hub for Kannada escorts on our platform—Indiranagar, Koramangala, Whitefield, MG Road, the usual spots. A lot of our clients are IT guys, business travellers, or locals who're done with dating apps and want one evening with no follow-up. They want someone who speaks Kannada or at least gets the vibe, looks presentable for a dinner or a do, and doesn't make things awkward. We have that. Most bookings are outcall to the client's hotel or apartment; we need your area and when you need her so we can fix someone who can reach you on time.",
-                "We get a fair number of outstation requests too—someone to take to Coorg, Chikmagalur, or Mysore for a couple of days. Not every girl does it, and we need notice, but we can sort it when you ask. Same deal as everywhere: discretion, pay when she arrives (cash or UPI), and for regular and housewife profiles no advance—just hotel proof and room details if it's a hotel. If you're in Bangalore or elsewhere in Karnataka and want Kannada-speaking company that's relaxed and reliable, drop us a message with when and what you have in mind.",
+                "Bangalore is the main hub for Kannada escorts on our platform—Indiranagar, Koramangala, Whitefield, MG Road, the usual spots. A lot of our clients are IT guys, business travellers, or locals who're done with dating apps and want one evening with no follow-up. They want someone who speaks Kannada or at least gets the vibe, fits a dinner or a do and doesn't make things awkward. We have that. Most bookings are outcall to the client's hotel or apartment; we need your area and when you need her so we can fix someone who can reach you on time.",
+                "We get a fair number of outstation requests too—someone to take to Coorg, Chikmagalur, or Mysore for a couple of days. Not every girl does it, and we need notice, but we can sort it when you ask. Same deal: we keep it private, you pay when she arrives (cash or UPI), and for regular and housewife no advance—just hotel proof and room details if it's a hotel. If you're in Bangalore or elsewhere in Karnataka and want Kannada-speaking company, message us with when and what you have in mind.",
               ],
             },
           ].map((block, idx) => (
@@ -307,7 +305,7 @@ export default function Home() {
               imageAlt: "Regular escorts – everyday companionship",
               paragraphs: [
                 "Regular escorts are exactly what the name says—everyday people who are easy to talk to and good company. No glamour act, no pretending to be someone else. Most of our clients who book regular escorts want someone for dinner, a night out, or a few hours at the hotel. They want someone who can hold a conversation, laugh when it matters, and not make things awkward. We get a lot of repeat bookings in this category because the vibe is natural. If you're not looking for a model or celebrity type and just want relaxed, genuine company, this is where most people start.",
-                "Outcall to your place or hotel is the norm. Same discretion and payment rules as the rest—we don't ask for advance for regular profiles. You tell us your area, what kind of evening you have in mind, and when; we suggest someone who can reach you. A lot of guys in Chennai, Bangalore and Hyderabad book regular escorts for client dinners or just to avoid eating alone. It's the most popular category for a reason.",
+                "Outcall to your place or hotel is the norm. Same deal—we don't take advance for regular. We keep it private. You tell us your area, what kind of evening you have in mind, and when; we suggest someone who can reach you. A lot of guys in Chennai, Bangalore and Hyderabad book regular escorts for client dinners or just to avoid eating alone. It's the most popular category for a reason.",
               ],
             },
             {
@@ -315,9 +313,9 @@ export default function Home() {
               title: "Housewife Escorts",
               icon: "🏠",
               image: "/images/housewife-escorts.avif",
-              imageAlt: "Housewife escorts – mature, discreet companionship",
+              imageAlt: "Housewife escorts – mature companionship",
               paragraphs: [
-                "Housewife escorts are mature, grounded women who bring life experience and a calm presence. A lot of our clients are guys who've had enough of drama and want someone who's easy to be around—someone who listens, doesn't judge, and doesn't need to be the centre of attention. Bookings are often for a relaxed evening at the client's place or hotel, dinner, or just someone to talk to. They're discreet by nature and good at reading the room.",
+                "Housewife escorts are mature, grounded women who bring life experience and a calm presence. A lot of our clients are guys who've had enough of drama and want someone who's easy to be around—someone who listens, doesn't judge, and doesn't need to be the centre of attention. Bookings are often for a relaxed evening at the client's place or hotel, dinner, or just someone to talk to. They're good at reading the room and easy to be around.",
                 "If you want company that feels comfortable and safe rather than flashy, this category fits. Same outcall and payment rules; we don't ask for advance for housewife profiles. Many clients book them when they want someone who gets family values and won't make the evening feel like a show. We have housewife escorts in Chennai, Bangalore, Kochi and other cities—tell us where you are and when you need someone.",
               ],
             },
@@ -329,7 +327,7 @@ export default function Home() {
               imageAlt: "College girl escorts – young, fun companionship",
               paragraphs: [
                 "College girls on our platform are students or young professionals—young, energetic, and easy to chat with. Clients book them for casual outings, parties, or someone to spend time with without heavy expectations. They're usually up for a good time, easygoing, and can talk about anything from studies to travel to nightlife. If you're looking for someone youthful and fun rather than formal, this category works.",
-                "We get a lot of bookings for events and dinners where the vibe is casual. Outcall to your location, same discretion; no advance for college girl escorts. A lot of guys in Bangalore and Chennai book them for a night out or a weekend. Tell us the occasion and we'll suggest who's free and who fits what you're looking for.",
+                "We get a lot of bookings for events and dinners where the vibe is casual. Outcall to your location; no advance for college girl escorts. Same deal on privacy. A lot of guys in Bangalore and Chennai book them for a night out or a weekend. Tell us the occasion and we'll suggest who's free and who fits what you're looking for.",
               ],
             },
             {
@@ -340,7 +338,7 @@ export default function Home() {
               imageAlt: "Model escorts – fashion, events, high-end companionship",
               paragraphs: [
                 "Model escorts are photogenic, well-dressed, and used to being in the room. A lot of clients book them for client dinners, corporate events, or when they want someone who'll turn heads and carry themselves well. They're used to social settings and know how to dress for the occasion. If you're taking someone to a high-end do in Chennai or Bangalore, this is the category a lot of guys pick. We have profiles who've worked in fashion or modelling; they bring that polish and confidence.",
-                "Outcall to your hotel or venue. For model escorts we may take a small advance (10% or 20%); the rest you pay when she arrives—cash or UPI. Same discretion: we don't share your number, and what happens stays between you and her. If you need someone for a corporate event or a dinner where impression matters, tell us the occasion and we'll match you.",
+                "Outcall to your hotel or venue. For model escorts we may take a small advance (10% or 20%); the rest you pay when she arrives—cash or UPI. We don't share your number; what happens stays between you and her. If you need someone for a corporate event or a dinner where impression matters, tell us the occasion and we'll suggest who fits.",
               ],
             },
             {
@@ -351,7 +349,7 @@ export default function Home() {
               imageAlt: "Artist escorts – dancers, musicians, creative companionship",
               paragraphs: [
                 "Artists are dancers, musicians, or performers—creative people who bring something extra to the table. Clients who book them often want more than small talk; they want someone who can talk about their craft, the industry, or the arts. A lot of bookings are for dinners, cultural events, or private evenings where conversation matters. If you're into music, dance, or visual arts, you'll find someone who gets it. They're expressive and know how to make an evening feel different from the usual.",
-                "Same discretion and outcall. Advance depends on the profile—we'll tell you when you ask. Artist escorts are popular in Chennai and Bangalore for events and for guys who want company that can hold a conversation about something other than work. Tell us what you have in mind and we'll see who's available.",
+                "Same outcall and privacy. Advance depends on the profile—we'll tell you when you ask. Artist escorts are popular in Chennai and Bangalore for events and for guys who want company that can hold a conversation about something other than work. Tell us what you have in mind and we'll see who's available.",
               ],
             },
             {
@@ -359,9 +357,9 @@ export default function Home() {
               title: "Celebrity Escorts",
               icon: "⭐",
               image: "/images/celebrity-escorts.avif",
-              imageAlt: "Celebrity escorts – high-profile, discreet companionship",
+              imageAlt: "Celebrity escorts – high-profile companionship",
               paragraphs: [
-                "Celebrity escorts are high-profile and used to attention. They understand discretion and don't talk about clients or post about where they've been. Clients book them when they want someone who's clearly special—for a big event, a client dinner where impression matters, or a private evening. They know how to handle the spotlight and keep things between you and them. We're strict about privacy with this category.",
+                "Celebrity escorts are high-profile and used to attention. They don't talk about clients or post about where they've been. Clients book them when they want someone who's clearly special—for a big event, a client dinner where impression matters, or a private evening. They know how to handle the spotlight and keep things between you and them. We're strict about privacy with this category.",
                 "If you want someone who looks and carries themselves like a celebrity, this is the one. Advance is usually required (10% or 20%); the rest when she arrives. We don't hand out your details; all coordination goes through us. Celebrity escort bookings need a bit of notice—tell us the date, the occasion, and the city and we'll see who we can fix.",
               ],
             },
@@ -372,8 +370,8 @@ export default function Home() {
               image: "/images/actress-escorts.avif",
               imageAlt: "Actress escorts – screen and stage talent, presence and charm",
               paragraphs: [
-                "Actress escorts have screen or stage background—expressive, confident, and good at making every moment feel considered. Clients book them for high-profile events, private evenings, or when they want someone with presence and charm. They're used to performing and know how to hold a conversation and read the room. A lot of clients love the mix of creativity and discretion. If you want someone with that kind of training and vibe, this category fits.",
-                "Advance is typically required; the rest when she arrives. Same discretion rules. We have actress escorts in major South Indian cities; tell us the occasion and when you need someone and we'll suggest who's free. Outcall to your hotel or venue. Payment by cash or UPI once she's there.",
+                "Actress escorts have screen or stage background—expressive, confident, and good at making every moment feel considered. Clients book them for high-profile events, private evenings, or when they want someone with presence and charm. They're used to performing and know how to hold a conversation and read the room. A lot of clients like the mix of creativity and privacy. If you want someone with that kind of training and vibe, this category fits.",
+                "Advance is typically required; the rest when she arrives. Same deal on privacy. We have actress escorts in major South Indian cities; tell us the occasion and when you need someone and we'll suggest who's free. Outcall to your hotel or venue. Payment by cash or UPI once she's there.",
               ],
             },
           ].map((block, idx) => {
@@ -450,21 +448,21 @@ export default function Home() {
               </h2>
               <div className="space-y-5">
                 <p className="text-lg leading-relaxed text-white/80 italic">
-                  "Hi there! I want to personally welcome you to our platform. I started this service because I saw how many people were struggling to find genuine, professional companionship in South India—someone who understands your culture, speaks your language, and makes you feel comfortable."
+                  Hi. I started this because a lot of people in South India were looking for company—someone who gets the culture, speaks the language, and doesn't make it complicated.
                 </p>
                 <p className="text-lg leading-relaxed text-white/70">
-                  You know, South India can be a busy place. Whether you're a busy executive who needs someone to accompany you to important events, a business traveler who's tired of dining alone, or someone who just wants pleasant company for an evening—I understand. I've been there myself.
+                  South India is busy. Whether you're in town for work and don't want to eat alone, or you want company for a dinner or an event—we get it. Same process: you tell us where you are, when you need someone and what you have in mind. We suggest who's free. You pay when she arrives. We don't share your number.
                 </p>
                 <p className="text-lg leading-relaxed text-white/70">
-                  That's why I personally curate every profile on our platform. I want to make sure they're not just beautiful, but also intelligent, well-mannered, and genuinely caring. When you contact us, you're not just getting a service—you're getting a friend who truly cares about making your evening special.
+                  We check the profiles we list. When you contact us you talk to a person, not a bot. If something isn't right on the day, tell us. We take feedback seriously.
                 </p>
                 <p className="text-lg leading-relaxed text-white/70">
-                  So please, don't hesitate to reach out. Whether you have questions, concerns, or just want to chat about what you're looking for—we're here to help. Your happiness and satisfaction are what drive us every single day.
+                  If you have questions or want to book, message us. We're on Telegram. No long forms.
                 </p>
               </div>
               <div className="mt-8 pt-6 border-t border-[var(--border-color)]">
-                <p className="text-xl font-semibold text-[var(--accent-gold)]">Your Trusted Friend</p>
-                <p className="text-sm text-white/60 mt-1">Founder & Your Personal Guide</p>
+                <p className="text-xl font-semibold text-[var(--accent-gold)]">Founder</p>
+                <p className="text-sm text-white/60 mt-1">Tamil Escorts</p>
               </div>
             </div>
             {/* Right: image */}
@@ -492,15 +490,15 @@ export default function Home() {
               Our Success Numbers
             </h2>
             <p className="text-lg text-white/70 max-w-2xl mx-auto">
-              Trusted by thousands of clients across South India, our numbers speak for themselves
+              We operate across South India. Same process everywhere.
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-4">
             {[
-              { number: "1000+", label: "Happy Clients", icon: "😊" },
-              { number: "100+", label: "Premium Escorts", icon: "⭐" },
+              { number: "1000+", label: "Clients", icon: "😊" },
+              { number: "100+", label: "Profiles", icon: "⭐" },
               { number: "24/7", label: "Availability", icon: "🕐" },
-              { number: "100%", label: "Discretion Guaranteed", icon: "🔒" },
+              { number: "—", label: "Private", icon: "🔒" },
             ].map((stat, idx) => (
               <div
                 key={idx}
@@ -525,7 +523,7 @@ export default function Home() {
               Understanding South Indian Escort Services
             </h2>
             <p className="text-lg text-white/70">
-              Learn more about our professional escort services and discover the benefits of choosing our trusted platform
+              What we do and how booking works
             </p>
           </div>
           <div className="space-y-8">
@@ -545,10 +543,10 @@ export default function Home() {
                   What are Escort Services in South India?
                 </h3>
                 <p className="text-lg leading-relaxed text-white/80 mb-4">
-                  An escort service is a platform that connects clients with professional companions. In most cases, we arrange meetings between clients and companions either at the client's location (outcall) or at the companion's location (incall).
+                  We connect you with companions. Usually she comes to you (outcall)—your hotel or your place. Sometimes we can arrange incall where available. You tell us your area, when you need someone and what you have in mind; we suggest who's free.
                 </p>
                 <p className="text-lg leading-relaxed text-white/80 mb-4">
-                  Our services go beyond basic companionship—we provide escorts who can accompany you on longer engagements, business trips, or even cultural events. While we handle the booking and coordination, any additional services are discussed directly between you and the companion.
+                  We handle booking and coordination. You pay when she arrives—cash or UPI. No advance for regular and housewife. For dinners, events or travel, tell us the occasion and we'll see who fits.
                 </p>
                 <div className="grid gap-4 sm:grid-cols-3 mt-4">
                   <div className="text-center p-4 bg-black/50 rounded-lg border border-[var(--border-color)]">
@@ -570,31 +568,31 @@ export default function Home() {
             <div className="grid grid-cols-1 gap-0 overflow-hidden rounded-xl border border-[var(--border-color)] bg-[var(--card-bg)] shadow-md backdrop-blur-md lg:grid-cols-2">
               <div className="flex flex-col justify-center p-6 sm:p-8">
                 <h3 className="text-2xl font-bold text-[var(--accent-gold)] mb-4">
-                  Benefits of Choosing Our Services
+                  What We Offer
                 </h3>
                 <div className="space-y-6">
                   <div>
                     <h4 className="text-xl font-bold text-white mb-2">
-                      Diverse Variety of Choices
+                      By Type and Category
                     </h4>
                     <p className="text-lg leading-relaxed text-white/70">
-                      Our main strength is access to a wide variety of companions. We have well-known and model companions available, including artists, celebrities, models, and independent professionals. These options are plentiful with diverse choices for different occasions.
+                      Tamil, Mallu, Telugu, Kannada. Regular, housewife, college girls, models, artists, celebrity, actress. Tell us what you're looking for and we'll suggest who's free.
                     </p>
                   </div>
                   <div>
                     <h4 className="text-xl font-bold text-white mb-2">
-                      No Special Skills Required
+                      Outcall to You
                     </h4>
                     <p className="text-lg leading-relaxed text-white/70">
-                      Our companions are professional and understanding. You don't need special charisma or talent to enjoy their company. You can enjoy their youth, beauty, and attractiveness without any pressure or expectations.
+                      She comes to your hotel or your place. You pay when she arrives—cash or UPI. No advance for regular and housewife. We need hotel proof and room details if you're at a hotel.
                     </p>
                   </div>
                   <div>
                     <h4 className="text-xl font-bold text-white mb-2">
-                      Saves Time and Money
+                      We Keep It Private
                     </h4>
                     <p className="text-lg leading-relaxed text-white/70">
-                      Skip the long process of dating and wooing. Our service allows you to hasten the whole process without additional fees. No need to spend time and money on traditional dating methods.
+                      We don't share your number. We don't store or pass on your details. Your booking stays between you and us.
                     </p>
                   </div>
                 </div>
@@ -622,10 +620,10 @@ export default function Home() {
               Why Choose Us
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-[var(--accent-gold)] mb-4">
-              Value & Quality in Every Service
+              How We Work
             </h2>
             <p className="text-lg text-white/70 max-w-2xl mx-auto">
-              Discover why our services offer exceptional value for your time and money
+              Same process everywhere: you message, we fix someone, you pay when she's there.
             </p>
           </div>
 
@@ -634,13 +632,13 @@ export default function Home() {
             <div className="lg:col-span-3 flex flex-col justify-center">
               <div className="bg-[var(--card-bg)] backdrop-blur-md rounded-2xl p-8 sm:p-10 border border-[var(--border-color)] h-full">
                 <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6 leading-tight">
-                  Is Your Time and Money Valuable?
+                  Same Process Everywhere
                 </h3>
                 <p className="text-lg leading-relaxed text-white/80 mb-5">
-                  South India is one of the busiest and most popular regions where people can enjoy, get entertained, and have access to all kinds of services that would make them happy. When you're thinking of getting intimate companionship, our escort services are waiting to ensure you go back wanting more.
+                  Chennai, Bangalore, Hyderabad, Kochi—we do outcall to your hotel or your place. You tell us your area, when you need someone and what type you want (Tamil, Mallu, regular, model, etc.). We suggest who's free. You pay when she arrives. No advance for regular and housewife.
                 </p>
                 <p className="text-lg leading-relaxed text-white/80">
-                  Our companions provide pleasure sprinkled with satisfaction and above all, complete client satisfaction. We are going to advance your fantasies and ensure to end your loneliness with our premium services.
+                  We don't share your number. We don't store or pass on your details. If something isn't right on the day, tell us afterwards.
                 </p>
               </div>
             </div>
@@ -653,7 +651,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h4 className="font-bold text-white mb-1 text-lg">Timely & Efficient</h4>
-                  <p className="text-white/70 text-sm leading-relaxed">Services that respect your schedule and deliver when you need them.</p>
+                  <p className="text-white/70 text-sm leading-relaxed">We confirm who can come and when. Usually quick.</p>
                 </div>
               </div>
               <div className="group flex gap-5 p-6 rounded-xl border border-[var(--border-color)] bg-[var(--card-bg)]/80 backdrop-blur-md hover:border-[var(--accent-gold)]/50 transition-colors">
@@ -662,7 +660,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h4 className="font-bold text-white mb-1 text-lg">Value for Money</h4>
-                  <p className="text-white/70 text-sm leading-relaxed">Premium experiences without hidden costs or compromises.</p>
+                  <p className="text-white/70 text-sm leading-relaxed">No hidden costs. We quote by duration and type; you pay when you meet.</p>
                 </div>
               </div>
               <div className="group flex gap-5 p-6 rounded-xl border border-[var(--border-color)] bg-[var(--card-bg)]/80 backdrop-blur-md hover:border-[var(--accent-gold)]/50 transition-colors">
@@ -670,8 +668,8 @@ export default function Home() {
                   ✅
                 </div>
                 <div>
-                  <h4 className="font-bold text-white mb-1 text-lg">Satisfaction Guarantee</h4>
-                  <p className="text-white/70 text-sm leading-relaxed">We stand behind every booking with complete client satisfaction.</p>
+                  <h4 className="font-bold text-white mb-1 text-lg">We Take Feedback Seriously</h4>
+                  <p className="text-white/70 text-sm leading-relaxed">If something isn't right on the day, tell us afterwards.</p>
                 </div>
               </div>
             </div>
@@ -693,11 +691,11 @@ export default function Home() {
                 <span className="text-3xl" aria-hidden>✦</span>
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--accent-gold)] mb-4 tracking-tight">
-                Our Personal Promise to You
+                What You Can Expect
               </h2>
               <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-[var(--accent-gold)] to-transparent mb-5" />
               <p className="text-lg sm:text-xl text-white/75 italic max-w-xl">
-                We don't just provide a service—we make a commitment to your happiness and satisfaction
+                Same process: you message, we fix someone, you pay when she's there. We keep it private.
               </p>
             </div>
           </div>
@@ -709,10 +707,10 @@ export default function Home() {
               <div className="relative">
                 <span className="inline-flex w-10 h-10 rounded-full bg-[var(--accent-gold)]/20 text-[var(--accent-gold)] font-bold text-lg items-center justify-center mb-5">1</span>
                 <h3 className="font-bold text-white mb-3 text-xl">
-                  Your Privacy is Sacred
+                  We Keep It Private
                 </h3>
                 <p className="text-white/80 leading-relaxed">
-                  We understand that discretion is everything. Your personal information, your preferences, and your experiences with us will always remain completely confidential.
+                  We don't share your details. Your information and what happens stay between you and us.
                 </p>
               </div>
             </div>
@@ -721,10 +719,10 @@ export default function Home() {
               <div className="relative">
                 <span className="inline-flex w-10 h-10 rounded-full bg-[var(--accent-gold)]/20 text-[var(--accent-gold)] font-bold text-lg items-center justify-center mb-5">2</span>
                 <h3 className="font-bold text-white mb-3 text-xl">
-                  Quality is Non-Negotiable
+                  We Check Who We List
                 </h3>
                 <p className="text-white/80 leading-relaxed">
-                  Every companion on our platform is carefully curated. We never compromise on quality because you deserve nothing but the best.
+                  We check profiles before we list them. Real photos, real people. No fakes.
                 </p>
               </div>
             </div>
@@ -733,10 +731,10 @@ export default function Home() {
               <div className="relative">
                 <span className="inline-flex w-10 h-10 rounded-full bg-[var(--accent-gold)]/20 text-[var(--accent-gold)] font-bold text-lg items-center justify-center mb-5">3</span>
                 <h3 className="font-bold text-white mb-3 text-xl">
-                  We're Always Here for You
+                  You Talk to a Person
                 </h3>
                 <p className="text-white/80 leading-relaxed">
-                  Whether it's 2 AM or 2 PM, whether you need advice or just want to chat, we're here. Your happiness and satisfaction are what drive us every day.
+                  We're on Telegram. You message us; someone who handles bookings replies. No bots or long forms.
                 </p>
               </div>
             </div>
@@ -760,7 +758,7 @@ export default function Home() {
               <p className="text-[var(--accent-gold)] font-semibold text-lg mb-1 tracking-wide">
                 With love and dedication,
               </p>
-              <p className="text-white/60 text-base">Your Trusted Friends in South India</p>
+              <p className="text-white/60 text-base">Tamil Escorts – South India</p>
             </div>
           </div>
         </div>
@@ -778,7 +776,7 @@ export default function Home() {
               Why Choose South Indian Escorts?
             </h2>
             <p className="text-lg text-white/70 max-w-2xl mx-auto">
-              Experience genuine companionship rooted in culture and authenticity
+              Tamil, Mallu, Telugu and Kannada companions. Same process everywhere.
             </p>
           </div>
 
@@ -804,9 +802,9 @@ export default function Home() {
               },
               {
                 icon: "🔐",
-                title: "Discretion & Respect",
-                description: "Discretion and respect are at the heart of everything we do. Every profile is carefully curated, and we make sure communication is clear, straightforward, and respectful. Your privacy matters, and we take that seriously.",
-                highlight: "Your privacy is our priority",
+                title: "Privacy & Respect",
+                description: "We don't share your number. We don't store or pass on your details. We check who we list. When you message us you get a clear, straightforward reply.",
+                highlight: "We keep it private",
               },
             ].map((item, idx) => (
               <div
@@ -861,10 +859,10 @@ export default function Home() {
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {[
-              { icon: "✓", title: "Verified Profiles", desc: "All profiles are carefully verified for authenticity and quality" },
-              { icon: "🔒", title: "Complete Discretion", desc: "Your privacy is our top priority. Everything stays confidential" },
-              { icon: "💬", title: "Direct Communication", desc: "Connect directly via Telegram for quick and easy communication" },
-              { icon: "⭐", title: "Premium Selection", desc: "Curated profiles from artists, models, and professionals" },
+              { icon: "✓", title: "Real Profiles", desc: "We check profiles before we list them. Real photos, real people." },
+              { icon: "🔒", title: "Private", desc: "We don't share your number or keep your details." },
+              { icon: "💬", title: "Telegram", desc: "Message us on Telegram. You talk to someone who handles bookings." },
+              { icon: "⭐", title: "By Type & Category", desc: "Tamil, Mallu, Telugu, Kannada. Regular, housewife, models, artists and more." },
             ].map((feature, idx) => (
               <div
                 key={idx}
@@ -941,9 +939,9 @@ export default function Home() {
             <div className="grid grid-cols-1 gap-6 md:grid-cols-4 md:gap-4">
               {[
                 { step: "1", title: "Initial Contact", time: "5-10 min", description: "Message us on Telegram to discuss your needs. We'll ask about your preferences, occasion, and requirements." },
-                { step: "2", title: "Companion Selection", time: "10-15 min", description: "We'll suggest the perfect companion based on your preferences and requirements." },
-                { step: "3", title: "Confirmation", time: "5 min", description: "Once you're satisfied with the selection, we'll confirm the booking and provide all necessary details." },
-                { step: "4", title: "Service Delivery", time: "As per booking", description: "Your companion will arrive at the agreed time and location, ready to make your experience special." },
+                { step: "2", title: "We Suggest Who's Free", time: "10-15 min", description: "We tell you who can reach you and when. If you're at a hotel we need proof and room details." },
+                { step: "3", title: "Confirmation", time: "5 min", description: "We confirm the booking and give you the details. You give her name at reception if it's a hotel." },
+                { step: "4", title: "She Arrives", time: "As per booking", description: "She comes to you. You pay when she's there—cash or UPI. No advance for regular and housewife." },
               ].map((item, idx) => (
                 <div key={idx} className="relative flex flex-col items-center text-center">
                   <div className="relative z-10 flex-shrink-0 w-14 h-14 rounded-full border-2 border-[var(--accent-gold)] bg-black flex items-center justify-center mb-4 shadow-[0_0_0_3px_rgba(0,0,0,0.9)]">
@@ -989,17 +987,14 @@ export default function Home() {
             <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[var(--accent-gold)]/40 via-[var(--accent-gold)] to-[var(--accent-gold)]/40" />
             <div className="p-8 sm:p-10 lg:p-12 pl-10 sm:pl-12">
               <blockquote className="text-xl sm:text-2xl font-medium text-white/95 leading-relaxed mb-8 italic border-l-2 border-[var(--accent-gold)]/50 pl-6">
-                You're not just getting a companion—you're getting someone who truly gets you.
+                A lot of clients want someone who speaks their language and gets the culture.
               </blockquote>
               <div className="space-y-6 text-lg leading-relaxed text-white/75">
                 <p>
-                  What really sets our South Indian escort services apart isn't just beauty or professionalism—it's finding someone who understands your cultural background, speaks your language, and makes you feel completely at home.
+                  We have companions who speak Tamil, Malayalam, Kannada and Telugu. Many clients in Chennai, Bangalore, Hyderabad and Kochi want someone they can talk to in their language—for a dinner, an event or just an evening. It makes a difference when the other person gets where you're from.
                 </p>
                 <p>
-                  When you're from Tamil Nadu, Kerala, Karnataka, or Andhra Pradesh, connecting with someone who shares your values, understands your traditions, and can converse in your native language is something special. It's being understood on a deeper level—culturally and emotionally too.
-                </p>
-                <p>
-                  Our companions are cultural ambassadors. They get family values, traditional customs, and the deep-rooted respect central to South Indian culture. Whether you want to speak Tamil, Malayalam, Kannada, or Telugu, share stories about your hometown, or enjoy the company of someone who appreciates your heritage, they know how to create that perfect connection.
+                  If you want someone who shares your background, understands your traditions or can hold a conversation in your language, tell us when you book. We'll suggest who fits. We get asked this a lot.
                 </p>
               </div>
               <div className="mt-8 pt-6 border-t border-[var(--border-color)] flex flex-wrap gap-3 justify-center">
@@ -1029,17 +1024,17 @@ export default function Home() {
               Who Can Use Our Services?
             </h2>
             <p className="text-lg text-white/70 max-w-2xl mx-auto">
-              Our services are perfect for anyone seeking genuine companionship
+              Business travelers, locals, events—same process for everyone.
             </p>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { icon: "👔", tag: "Professional", title: "Business Professionals", description: "Busy executives who need someone to accompany them to corporate events, business dinners, or networking functions. Make the right impression with professional companionship." },
-              { icon: "✈️", tag: "Travel", title: "Business Travelers", description: "Travelers who are tired of dining alone in hotel restaurants. Enjoy pleasant company and meaningful conversation during your business trips." },
-              { icon: "🎉", tag: "Social", title: "Event Attendees", description: "Anyone attending social events, parties, or celebrations who wants to make the evening more special with beautiful, intelligent company." },
-              { icon: "💼", tag: "Corporate", title: "Corporate Events", description: "Companies looking for professional companions for corporate events, client meetings, or business functions. Enhance your corporate image." },
-              { icon: "🎭", tag: "Culture", title: "Cultural Events", description: "Art lovers, music enthusiasts, and cultural event attendees who want someone to share their passion for arts and culture." },
-              { icon: "💝", tag: "Personal", title: "Special Occasions", description: "Anyone celebrating birthdays, anniversaries, promotions, or special milestones who wants to make the occasion truly memorable." },
+              { icon: "👔", tag: "Professional", title: "Business Professionals", description: "Executives who need a plus-one for corporate events, client dinners or networking. Tell us the occasion and we'll suggest who fits." },
+              { icon: "✈️", tag: "Travel", title: "Business Travelers", description: "In town for a few days, don't want to eat alone. Same process: you tell us your hotel area, when and what you want; we fix someone who can come." },
+              { icon: "🎉", tag: "Social", title: "Event Attendees", description: "Social events, parties, celebrations. You need company for the evening—tell us when and what kind of vibe; we'll see who's free." },
+              { icon: "💼", tag: "Corporate", title: "Corporate Events", description: "Client meetings, business functions. We send someone who can hold their own at the table. Tell us the occasion and we'll match." },
+              { icon: "🎭", tag: "Culture", title: "Cultural Events", description: "Dinners, art events, music—if you want company who gets culture and conversation, tell us what you have in mind." },
+              { icon: "💝", tag: "Personal", title: "Special Occasions", description: "Birthdays, anniversaries, milestones. Tell us the date, the vibe and when you need someone; we'll see who's free." },
             ].map((item, idx) => (
               <div
                 key={idx}
@@ -1082,7 +1077,7 @@ export default function Home() {
             </h2>
             <div className="w-16 h-0.5 bg-[var(--accent-gold)]/50 mx-auto mb-4" />
             <p className="text-lg text-white/70 max-w-2xl mx-auto">
-              Each category offers unique experiences tailored to your preferences
+              Regular, housewife, college girls, models and more. Pick a category to browse.
             </p>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -1133,7 +1128,7 @@ export default function Home() {
             </h2>
             <div className="w-16 h-0.5 bg-[var(--accent-gold)]/50 mx-auto mb-4" />
             <p className="text-lg text-white/70 max-w-2xl mx-auto">
-              Everything you need to know. No question is too small or too silly. We&apos;re here to help!
+              Common questions. If yours isn't here, message us—we'll answer.
             </p>
           </div>
           <div className="grid gap-5 sm:grid-cols-2">
@@ -1179,7 +1174,7 @@ export default function Home() {
               </h2>
               <div className="w-20 h-0.5 bg-[var(--accent-gold)]/50 mx-auto mb-5" />
               <p className="text-lg text-white/80 mb-8 max-w-xl mx-auto leading-relaxed">
-                We&apos;re here to help you find the perfect companion. Whether you have questions or are ready to book, our team is available 24/7.
+                Message us with your area, when you need someone and what you have in mind. We're on Telegram. Questions or ready to book—same place.
               </p>
               <div className="flex justify-center">
                 <a
@@ -1201,11 +1196,11 @@ export default function Home() {
                 </span>
                 <span className="inline-flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent-gold)]" />
-                  Complete Discretion
+                  Private
                 </span>
                 <span className="inline-flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent-gold)]" />
-                  Professional Service
+                  Pay when you meet
                 </span>
               </div>
             </div>
