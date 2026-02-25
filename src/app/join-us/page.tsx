@@ -6,7 +6,7 @@ export const metadata = {
     "Join our network of premium South Indian escorts. Discreet, professional, and rewarding. Apply via Telegram. Verified platform across Chennai, Bangalore, Hyderabad & more.",
 };
 
-const TELEGRAM_APPLY = "https://t.me/LillyBabe_chennai";
+const TELEGRAM_APPLY = "https://t.me/Tamil_Escorts";
 
 export default function JoinUsPage() {
   return (

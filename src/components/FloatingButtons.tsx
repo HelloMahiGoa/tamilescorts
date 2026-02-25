@@ -21,7 +21,7 @@ export default function FloatingButtons() {
     <>
       {/* Telegram Floating Button */}
       <a
-        href="https://t.me/LillyBabe_chennai"
+        href="https://t.me/Tamil_Escorts"
         className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#0088cc] shadow-2xl transition-all hover:scale-110 hover:shadow-[0_0_20px_rgba(0,136,204,0.6)]"
         aria-label="Telegram"
       >

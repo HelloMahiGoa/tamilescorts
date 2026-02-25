@@ -6,8 +6,8 @@ export const metadata = {
     "Contact Tamil Escorts for bookings and inquiries. Telegram 24/7. Discreet, professional service across Chennai, Bangalore, Hyderabad & South India.",
 };
 
-const TELEGRAM_USERNAME = "LillyBabe_chennai";
-const TELEGRAM_URL = "https://t.me/LillyBabe_chennai";
+const TELEGRAM_USERNAME = "Tamil_Escorts";
+const TELEGRAM_URL = "https://t.me/Tamil_Escorts";
 
 export default function ContactPage() {
   return (

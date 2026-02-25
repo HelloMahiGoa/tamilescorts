@@ -51,7 +51,7 @@ export const CATEGORY_STYLES: Record<
 };
 
 export const DEFAULT_WHATSAPP = "+918121426651";
-export const DEFAULT_TELEGRAM = "https://t.me/LillyBabe_chennai";
+export const DEFAULT_TELEGRAM = "https://t.me/Tamil_Escorts";
 export const DEFAULT_RATES = {
   rate_1shot: 12000,
   rate_2shot: 24000,

@@ -239,7 +239,7 @@ export default function AboutPage() {
           </p>
           <div className="flex justify-center">
             <a
-              href="https://t.me/LillyBabe_chennai"
+              href="https://t.me/Tamil_Escorts"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold bg-[var(--accent-gold)] text-black hover:bg-[var(--accent-gold)]/90 transition-all"

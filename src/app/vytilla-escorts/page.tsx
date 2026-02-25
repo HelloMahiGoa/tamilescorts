@@ -2171,7 +2171,7 @@ export default function VytillaEscortsPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-3 sm:gap-4" role="group" aria-label="Contact options">
             <a
-              href="https://t.me/LillyBabe_Kochi"
+              href="https://t.me/Tamil_Escorts"
               target="_blank"
               rel="noopener noreferrer nofollow"
               className="inline-flex items-center justify-center gap-2 px-8 sm:px-10 py-4 sm:py-5 bg-[var(--accent-gold)] text-black font-bold rounded-lg hover:bg-[var(--accent-gold)]/90 transition-all text-base sm:text-lg"

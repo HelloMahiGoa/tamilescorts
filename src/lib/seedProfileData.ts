@@ -213,7 +213,7 @@ function generateProfiles(): Profile[] {
           availability: ["Available Now", "Available Today", "Available This Week"][seed % 3],
           languages: getLanguages(type),
           services: getServices(category),
-          telegram: "LillyBabe_chennai",
+          telegram: "Tamil_Escorts",
           verified: (seed % 10) < 7,
           responseTime: ["Usually responds within 30 mins", "Usually responds within 1 hour", "Usually responds within 2 hours"][seed % 3],
           rating,

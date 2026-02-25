@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getBaseUrl } from "@/lib/site";
@@ -7,7 +7,7 @@ import { getCategoryPagePath, type CategorySlug } from "@/lib/categories";
 const base = getBaseUrl();
 const url = `${base}/ecr-escorts`;
 
-const metaTitle = "ECR Escorts | Chennai Escorts in East Coast Road – Outcall to Hotels & Resorts";
+const metaTitle = "ECR Escorts | Chennai Escorts in East Coast Road � Outcall to Hotels & Resorts";
 const metaDescription =
   "ECR escorts and escort service in Chennai. Outcall to your hotel or resort on East Coast Road. Discreet, verified. Tamil, Mallu, Telugu & Kannada. Pay when you meet. No advance for regular & housewife.";
 
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
         url: `${base}/images/2.avif`,
         width: 1200,
         height: 630,
-        alt: "ECR escorts – premium outcall escort service on East Coast Road, Chennai",
+        alt: "ECR escorts � premium outcall escort service on East Coast Road, Chennai",
         type: "image/avif",
       },
     ],
@@ -154,7 +154,7 @@ const POPULAR_HOTELS = [
 const DURATION_OPTIONS = [
   { title: "Short Time (2-3 hours)", desc: "Most popular in ECR. Perfect for tourists and travelers staying at beachside resorts. She comes to you for a few hours-dinner, conversation, or relaxed evening. Pay when she arrives; no advance for regular and housewife profiles.", popular: true },
   { title: "Dinner or Evening", desc: "Fixed slot for a dinner, event, or party in ECR. Tell us the start time and when it ends. Same payment rules. We match someone who fits the occasion.", popular: false },
-  { title: "Full Night", desc: "Dinner plus the night-typically 8–10 hours. Advance notice helps so we can confirm who's free in ECR. Payment when she's there; for models and above we take a small advance.", popular: false },
+  { title: "Full Night", desc: "Dinner plus the night-typically 8�10 hours. Advance notice helps so we can confirm who's free in ECR. Payment when she's there; for models and above we take a small advance.", popular: false },
   { title: "Outstation Travel", desc: "Trips from ECR to Pondicherry, Mahabalipuram, or elsewhere. We need a few days' notice. Not every companion does outstation. Same discretion and payment.", popular: false },
 ];
 
@@ -328,7 +328,7 @@ function buildECRJsonLd() {
       image: [
         `${base}/images/2.avif`,
       ],
-      priceRange: "₹₹ - ₹₹₹₹₹",
+      priceRange: "?? - ?????",
       address: {
         "@type": "PostalAddress",
         addressLocality: "East Coast Road",
@@ -431,7 +431,7 @@ function buildECRJsonLd() {
       offers: {
         "@type": "Offer",
         priceCurrency: "INR",
-        priceRange: "₹₹ - ₹₹₹₹₹",
+        priceRange: "?? - ?????",
         availability: "https://schema.org/InStock",
         url: url,
       },
@@ -490,7 +490,7 @@ export default function ECREscortsPage() {
         <div className="absolute inset-0" aria-hidden="true">
           <Image
             src="/images/2.avif"
-            alt="ECR escorts – premium outcall escort service on East Coast Road, Chennai. Discreet, verified companions available for resort and hotel bookings on beachside ECR."
+            alt="ECR escorts � premium outcall escort service on East Coast Road, Chennai. Discreet, verified companions available for resort and hotel bookings on beachside ECR."
             fill
             className="object-cover object-center"
             priority
@@ -538,7 +538,7 @@ export default function ECREscortsPage() {
               <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 mb-4 sm:mb-6 bg-[var(--accent-gold)]/20 backdrop-blur-md border border-[var(--accent-gold)]/40 rounded-full">
                 <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[var(--accent-gold)]" />
                 <span className="text-[10px] sm:text-xs font-semibold tracking-widest text-[var(--accent-gold)] uppercase">
-                  Chennai · Beachside
+                  Chennai � Beachside
                 </span>
               </div>
 
@@ -761,7 +761,7 @@ export default function ECREscortsPage() {
                   aria-label="View all escort categories"
                 >
                   View all categories
-                  <span aria-hidden="true">→</span>
+                  <span aria-hidden="true">?</span>
                 </Link>
               </div>
             </div>
@@ -902,7 +902,7 @@ export default function ECREscortsPage() {
         <div className="mx-auto max-w-7xl relative z-10">
           <div className="text-center mb-10 sm:mb-12">
             <div className="inline-block mb-4" aria-hidden="true">
-              <span className="text-xs font-mono tracking-widest text-[var(--accent-gold)] uppercase">📍 Landmarks</span>
+              <span className="text-xs font-mono tracking-widest text-[var(--accent-gold)] uppercase">?? Landmarks</span>
             </div>
             <h2 id="highlights-heading" className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 leading-tight" itemProp="name">
               Area Highlights
@@ -1008,7 +1008,7 @@ export default function ECREscortsPage() {
                 } rounded-2xl hover:scale-[1.02] transition-all`}>
                   {service.popular && (
                     <div className="absolute -top-2 -right-2 w-6 h-6 bg-[var(--accent-gold)] rounded-full flex items-center justify-center">
-                      <span className="text-xs font-bold text-black">★</span>
+                      <span className="text-xs font-bold text-black">?</span>
                     </div>
                   )}
                   <div className="mb-3">
@@ -1029,9 +1029,9 @@ export default function ECREscortsPage() {
         <div className="mx-auto max-w-5xl relative z-10">
           <div className="text-center mb-10 sm:mb-12">
             <div className="inline-flex items-center gap-2 mb-4">
-              <span className="text-2xl">🎉</span>
+              <span className="text-2xl">??</span>
               <span className="text-xs font-mono tracking-widest text-[var(--accent-gold)] uppercase">Group Events</span>
-              <span className="text-2xl">🎉</span>
+              <span className="text-2xl">??</span>
             </div>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-4 leading-tight">
               Group Bookings
@@ -1130,9 +1130,9 @@ export default function ECREscortsPage() {
         <div className="mx-auto max-w-6xl">
           <div className="text-center mb-10 sm:mb-12">
             <div className="inline-flex items-center gap-3 mb-4">
-              <span className="text-2xl">💰</span>
+              <span className="text-2xl">??</span>
               <span className="text-xs font-mono tracking-widest text-[var(--accent-gold)] uppercase">Pricing</span>
-              <span className="text-2xl">💰</span>
+              <span className="text-2xl">??</span>
             </div>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-4 leading-tight">
               Pricing Overview
@@ -1198,7 +1198,7 @@ export default function ECREscortsPage() {
               {[
                 { 
                   title: "Cancellations", 
-                  icon: "✕",
+                  icon: "?",
                   content: "If you need to cancel, let us know as soon as possible. For regular, housewife and college-girl profiles -no advance was taken, so no refund needed. For models and above where we took an advance, cancellation policy depends on timing:",
                   list: [
                     "24+ hours notice: Full refund of advance",
@@ -1208,13 +1208,13 @@ export default function ECREscortsPage() {
                 },
                 { 
                   title: "Rescheduling", 
-                  icon: "↻",
+                  icon: "?",
                   content: "Need to change the time? Message us and we'll try to accommodate. Same-day rescheduling depends on her availability. Advance bookings are easier to reschedule. We'll confirm the new time before you commit.",
                   list: null
                 },
                 { 
                   title: "No-Shows", 
-                  icon: "⏰",
+                  icon: "?",
                   content: "If you don't show up or don't respond when she arrives, the booking is considered complete. For advance payments, no refund. For regular profiles with no advance, no charge-but please communicate if plans change.",
                   list: null
                 }
@@ -1233,7 +1233,7 @@ export default function ECREscortsPage() {
                       <ul className="space-y-2 text-white/70 text-sm sm:text-base ml-4">
                         {item.list.map((li, i) => (
                           <li key={i} className="flex items-start gap-2">
-                            <span className="text-[var(--accent-gold)] mt-1">•</span>
+                            <span className="text-[var(--accent-gold)] mt-1">�</span>
                             <span>{li}</span>
                           </li>
                         ))}
@@ -1266,7 +1266,7 @@ export default function ECREscortsPage() {
             <div className="p-6 sm:p-8 bg-black/40 border border-white/10 rounded-xl">
               <h3 className="text-lg font-bold text-[var(--accent-gold)] mb-3">Same-Day Bookings</h3>
               <p className="text-white/75">
-                Message as early as you can. We usually reply within 1–2 hours; we&apos;ll tell you who&apos;s free and can reach you in ECR. Popular for business travelers who decide last minute.
+                Message as early as you can. We usually reply within 1�2 hours; we&apos;ll tell you who&apos;s free and can reach you in ECR. Popular for business travelers who decide last minute.
               </p>
             </div>
             <div className="p-6 sm:p-8 bg-black/40 border border-white/10 rounded-xl">
@@ -1354,9 +1354,9 @@ export default function ECREscortsPage() {
         <div className="mx-auto max-w-5xl">
           <div className="text-center mb-10 sm:mb-12">
             <div className="inline-flex items-center gap-3 mb-4">
-              <span className="text-2xl">✓</span>
+              <span className="text-2xl">?</span>
               <span className="text-xs font-mono tracking-widest text-[var(--accent-gold)] uppercase">Verification</span>
-              <span className="text-2xl">✓</span>
+              <span className="text-2xl">?</span>
             </div>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-4 leading-tight">
               Verification &<br />Screening
@@ -1370,7 +1370,7 @@ export default function ECREscortsPage() {
             {[
               {
                 title: "Escort Verification",
-                icon: "🛡️",
+                icon: "???",
                 content: "All escorts are verified before we list them. We check:",
                 items: [
                   "Real photos (no stock images or fake profiles)",
@@ -1381,7 +1381,7 @@ export default function ECREscortsPage() {
               },
               {
                 title: "Client Screening",
-                icon: "🔍",
+                icon: "??",
                 content: "For your safety and ours, we may ask for:",
                 items: [
                   "Hotel proof: Room key photo or bill (for hotel bookings)",
@@ -1392,7 +1392,7 @@ export default function ECREscortsPage() {
               },
               {
                 title: "Ongoing Monitoring",
-                icon: "📊",
+                icon: "??",
                 content: "We monitor feedback and maintain quality standards. If an escort doesn't meet expectations, we address it immediately. Your feedback helps us maintain service quality in ECR.",
                 items: null,
                 note: null
@@ -1417,7 +1417,7 @@ export default function ECREscortsPage() {
                     <div className="ml-16 space-y-2">
                       {item.items.map((li, i) => (
                         <div key={i} className="flex items-start gap-2">
-                          <span className="text-[var(--accent-gold)] mt-1">✓</span>
+                          <span className="text-[var(--accent-gold)] mt-1">?</span>
                           <span className="text-sm text-white/70">{li}</span>
                         </div>
                       ))}
@@ -1475,9 +1475,9 @@ export default function ECREscortsPage() {
         <div className="mx-auto max-w-5xl">
           <div className="text-center mb-10 sm:mb-12">
             <div className="inline-flex items-center gap-3 mb-4">
-              <span className="text-2xl">📋</span>
+              <span className="text-2xl">??</span>
               <span className="text-xs font-mono tracking-widest text-[var(--accent-gold)] uppercase">Requirements</span>
-              <span className="text-2xl">✓</span>
+              <span className="text-2xl">?</span>
             </div>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-4 leading-tight">
               Booking<br />Requirements
@@ -1491,13 +1491,13 @@ export default function ECREscortsPage() {
             {[
               {
                 title: "Age Verification",
-                icon: "🔞",
+                icon: "??",
                 desc: "You must be 18 years or older to book. We don't ask for ID, but we reserve the right to verify age if needed.",
                 items: null
               },
               {
                 title: "Hotel Proof (For Hotel Bookings)",
-                icon: "🏨",
+                icon: "??",
                 desc: "If you're staying at a hotel in ECR, we need:",
                 items: [
                   "Photo of your room key or hotel bill showing your name",
@@ -1509,13 +1509,13 @@ export default function ECREscortsPage() {
               },
               {
                 title: "Residential Bookings",
-                icon: "🏠",
+                icon: "??",
                 desc: "For residential bookings in ECR, we need your area and address. Clear gate or lobby instructions help avoid delays.",
                 items: null
               },
               {
                 title: "Communication",
-                icon: "💬",
+                icon: "??",
                 desc: "We need clear communication about your location, timing, and preferences. Respond promptly to our messages.",
                 items: null
               }
@@ -1537,7 +1537,7 @@ export default function ECREscortsPage() {
                         <div className="space-y-2 ml-4">
                           {item.items.map((li, i) => (
                             <div key={i} className="flex items-start gap-2">
-                              <span className="text-[var(--accent-gold)] mt-1">▸</span>
+                              <span className="text-[var(--accent-gold)] mt-1">?</span>
                               <span className="text-sm text-white/70">{li}</span>
                             </div>
                           ))}
@@ -1561,9 +1561,9 @@ export default function ECREscortsPage() {
         <div className="mx-auto max-w-5xl relative z-10">
           <div className="text-center mb-10 sm:mb-12">
             <div className="inline-flex items-center gap-2 mb-4">
-              <span className="text-2xl">✨</span>
+              <span className="text-2xl">?</span>
               <span className="text-xs font-mono tracking-widest text-[var(--accent-gold)] uppercase">Customization</span>
-              <span className="text-2xl">✨</span>
+              <span className="text-2xl">?</span>
             </div>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-4 leading-tight">
               Special Requests &<br />Preferences
@@ -1577,25 +1577,25 @@ export default function ECREscortsPage() {
             {[
               {
                 title: "Appearance Preferences",
-                icon: "👤",
+                icon: "??",
                 desc: "Looking for a specific look, height, or style? Tell us when you book. We'll try to match your preferences.",
                 tags: ["Height", "Style", "Look"]
               },
               {
                 title: "Language Preferences",
-                icon: "🗣️",
+                icon: "???",
                 desc: "Prefer someone who speaks Tamil, Malayalam, Telugu, Kannada, or English? We have escorts fluent in these languages.",
                 tags: ["Tamil", "Mallu", "Telugu", "Kannada", "English"]
               },
               {
                 title: "Special Occasions",
-                icon: "🎉",
+                icon: "??",
                 desc: "Planning something special? We can help with birthdays, anniversaries, corporate events, outstation trips, and multiple-day bookings.",
                 tags: ["Birthday", "Anniversary", "Corporate", "Outstation", "Multi-day"]
               },
               {
                 title: "What We Can't Accommodate",
-                icon: "⚠️",
+                icon: "??",
                 desc: "We provide companionship and escort services. We can't accommodate requests that are illegal, unsafe, or violate our policies.",
                 tags: ["Legal Only", "Safe", "Policy Compliant"]
               }
@@ -1637,9 +1637,9 @@ export default function ECREscortsPage() {
         <div className="mx-auto max-w-5xl">
           <div className="text-center mb-10 sm:mb-12">
             <div className="inline-flex items-center gap-3 mb-4">
-              <span className="text-3xl">🏆</span>
+              <span className="text-3xl">??</span>
               <span className="text-xs font-mono tracking-widest text-[var(--accent-gold)] uppercase">Loyalty</span>
-              <span className="text-3xl">🏆</span>
+              <span className="text-3xl">??</span>
             </div>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-4 leading-tight">
               Repeat Client<br />Benefits
@@ -1710,9 +1710,9 @@ export default function ECREscortsPage() {
         <div className="mx-auto max-w-5xl">
           <div className="text-center mb-10 sm:mb-12">
             <div className="inline-flex items-center gap-3 mb-4">
-              <span className="text-2xl">🚗</span>
+              <span className="text-2xl">??</span>
               <span className="text-xs font-mono tracking-widest text-[var(--accent-gold)] uppercase">Logistics</span>
-              <span className="text-2xl">📍</span>
+              <span className="text-2xl">??</span>
             </div>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-4 leading-tight">
               Transportation &<br />Logistics
@@ -1810,7 +1810,7 @@ export default function ECREscortsPage() {
                 <div className="relative p-6 sm:p-8 bg-black/60 backdrop-blur-md border-l-4 border-[var(--accent-gold)]/40 hover:border-[var(--accent-gold)] rounded-xl transition-all hover:bg-black/70">
                   <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
                     <div className="flex-shrink-0 w-16 h-16 rounded-xl bg-gradient-to-br from-[var(--accent-gold)]/20 to-[var(--accent-gold)]/10 flex items-center justify-center text-3xl border border-[var(--accent-gold)]/30 group-hover:scale-110 transition-transform">
-                      {idx === 0 ? "💬" : idx === 1 ? "📞" : "📧"}
+                      {idx === 0 ? "??" : idx === 1 ? "??" : "??"}
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
@@ -1840,9 +1840,9 @@ export default function ECREscortsPage() {
         <div className="mx-auto max-w-5xl relative z-10">
           <div className="text-center mb-10 sm:mb-12">
             <div className="inline-flex items-center gap-3 mb-4">
-              <span className="text-3xl">🕐</span>
+              <span className="text-3xl">??</span>
               <span className="text-xs font-mono tracking-widest text-[var(--accent-gold)] uppercase">Availability</span>
-              <span className="text-3xl">🕐</span>
+              <span className="text-3xl">??</span>
             </div>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-4 leading-tight">
               Operating Hours
@@ -1856,10 +1856,10 @@ export default function ECREscortsPage() {
             <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-[var(--accent-gold)]/50 via-[var(--accent-gold)]/30 to-transparent hidden lg:block -translate-x-1/2" />
             <div className="space-y-8">
               {[
-                { time: "9 AM - 6 PM", label: "Daytime", desc: "Fastest response, usually within 1-2 hours", icon: "☀️" },
-                { time: "6 PM - 11 PM", label: "Evenings", desc: "Busy period, may take 2-3 hours to respond", icon: "🌆" },
-                { time: "11 PM - 2 AM", label: "Late Night", desc: "Limited availability, response may be slower", icon: "🌙" },
-                { time: "2 AM - 9 AM", label: "Early Morning", desc: "Minimal availability, responses next day", icon: "🌅" }
+                { time: "9 AM - 6 PM", label: "Daytime", desc: "Fastest response, usually within 1-2 hours", icon: "??" },
+                { time: "6 PM - 11 PM", label: "Evenings", desc: "Busy period, may take 2-3 hours to respond", icon: "??" },
+                { time: "11 PM - 2 AM", label: "Late Night", desc: "Limited availability, response may be slower", icon: "??" },
+                { time: "2 AM - 9 AM", label: "Early Morning", desc: "Minimal availability, responses next day", icon: "??" }
               ].map((item, idx) => (
                 <div key={item.label} className={`relative flex gap-6 ${idx % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
                   <div className="flex-shrink-0 w-20 h-20 rounded-full bg-black/60 border-4 border-[var(--accent-gold)]/50 flex items-center justify-center text-3xl hidden lg:flex z-10">
@@ -1898,9 +1898,9 @@ export default function ECREscortsPage() {
         <div className="mx-auto max-w-5xl relative z-10">
           <div className="text-center mb-10 sm:mb-12">
             <div className="inline-flex items-center gap-3 mb-4">
-              <span className="text-2xl">📅</span>
+              <span className="text-2xl">??</span>
               <span className="text-xs font-mono tracking-widest text-[var(--accent-gold)] uppercase">Seasons</span>
-              <span className="text-2xl">📅</span>
+              <span className="text-2xl">??</span>
             </div>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-4 leading-tight">
               Seasonal<br />Availability
@@ -1930,7 +1930,7 @@ export default function ECREscortsPage() {
                 } rounded-2xl transition-all hover:scale-[1.02]`}>
                   {season.busy && (
                     <div className="absolute -top-3 -right-3 px-3 py-1 bg-[var(--accent-gold)] text-black text-xs font-bold rounded-full border-2 border-black">
-                      🔥 BUSY
+                      ?? BUSY
                     </div>
                   )}
                   <div className="flex items-start justify-between mb-3">
@@ -1939,7 +1939,7 @@ export default function ECREscortsPage() {
                       <p className="text-sm text-[var(--accent-gold)] font-semibold">{season.months}</p>
                     </div>
                     <div className="text-3xl opacity-50">
-                      {idx === 0 ? "🌞" : idx === 1 ? "🎉" : idx === 2 ? "🌧️" : "☀️"}
+                      {idx === 0 ? "??" : idx === 1 ? "??" : idx === 2 ? "???" : "??"}
                     </div>
                   </div>
                   <p className="text-sm text-white/70 leading-relaxed">{season.desc}</p>
@@ -1962,9 +1962,9 @@ export default function ECREscortsPage() {
         <div className="mx-auto max-w-7xl relative z-10">
           <div className="text-center mb-10 sm:mb-12">
             <div className="inline-flex items-center gap-3 mb-4">
-              <span className="text-2xl">⚖️</span>
+              <span className="text-2xl">??</span>
               <span className="text-xs font-mono tracking-widest text-[var(--accent-gold)] uppercase">Comparison</span>
-              <span className="text-2xl">⚖️</span>
+              <span className="text-2xl">??</span>
             </div>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-4 leading-tight">
               ECR vs<br />Other Areas
@@ -1992,7 +1992,7 @@ export default function ECREscortsPage() {
                 } rounded-2xl transition-all hover:scale-[1.02]`}>
                   {item.area === "ECR" && (
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-[var(--accent-gold)] text-black text-xs font-bold rounded-full border-2 border-black">
-                      ⭐ CURRENT AREA ⭐
+                      ? CURRENT AREA ?
                     </div>
                   )}
                   <div className={`text-center ${item.area === "ECR" ? 'mt-4' : ''}`}>
@@ -2085,9 +2085,9 @@ export default function ECREscortsPage() {
         <div className="mx-auto max-w-5xl relative z-10">
           <div className="text-center mb-10 sm:mb-12">
             <div className="inline-flex items-center gap-3 mb-4" aria-hidden="true">
-              <span className="text-2xl">❓</span>
+              <span className="text-2xl">?</span>
               <span className="text-xs font-mono tracking-widest text-[var(--accent-gold)] uppercase">Concerns</span>
-              <span className="text-2xl">💬</span>
+              <span className="text-2xl">??</span>
             </div>
             <h2 id="concerns-heading" className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-4 leading-tight" itemProp="name">
               Common Concerns<br />Addressed
@@ -2178,7 +2178,7 @@ export default function ECREscortsPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-3 sm:gap-4" role="group" aria-label="Contact options">
             <a
-              href="https://t.me/LillyBabe_chennai"
+              href="https://t.me/Tamil_Escorts"
               target="_blank"
               rel="noopener noreferrer nofollow"
               className="inline-flex items-center justify-center gap-2 px-8 sm:px-10 py-4 sm:py-5 bg-[var(--accent-gold)] text-black font-bold rounded-lg hover:bg-[var(--accent-gold)]/90 transition-all text-base sm:text-lg"

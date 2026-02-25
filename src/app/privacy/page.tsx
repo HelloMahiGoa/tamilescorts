@@ -219,7 +219,7 @@ export default function PrivacyPage() {
                 If you have questions about this Privacy Policy or wish to exercise your rights, please contact us:
               </p>
               <ul className="space-y-1 text-white/80">
-                <li>• Via Telegram: @LillyBabe_chennai</li>
+                <li>• Via Telegram: @Tamil_Escorts</li>
                 <li>• Via our <Link href="/contact" className="text-[var(--accent-gold)] hover:underline">Contact</Link> page</li>
               </ul>
             </div>

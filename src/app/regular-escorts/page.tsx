@@ -1507,7 +1507,7 @@ export default function RegularEscortsPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="https://t.me/LillyBabe_chennai"
+                href="https://t.me/Tamil_Escorts"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Contact us on Telegram to book regular escorts"

@@ -1186,7 +1186,7 @@ export default function HyderabadEscortsPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="https://t.me/LillyBabe_chennai"
+                href="https://t.me/Tamil_Escorts"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Contact Hyderabad escorts on Telegram"
