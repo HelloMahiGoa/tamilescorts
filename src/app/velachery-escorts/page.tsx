@@ -7,7 +7,7 @@ import { getCategoryPagePath, type CategorySlug } from "@/lib/categories";
 const base = getBaseUrl();
 const url = `${base}/velachery-escorts`;
 
-const metaTitle = "Velachery Escorts | Chennai Escorts in Velachery – Outcall to Hotels & Your Place";
+const metaTitle = "Velachery Escorts | Chennai Escorts in Velachery - Outcall to Hotels & Your Place";
 const metaDescription =
   "Velachery escorts and escort service in Chennai. Outcall to your hotel or place in Velachery. Discreet, verified. Tamil, Mallu, Telugu & Kannada. Pay when you meet. No advance for regular & housewife.";
 
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
         url: `${base}/images/2.avif`,
         width: 1200,
         height: 630,
-        alt: "Velachery escorts – premium outcall escort service in Chennai",
+        alt: "Velachery escorts - premium outcall escort service in Chennai",
         type: "image/avif",
       },
     ],
@@ -153,7 +153,7 @@ const POPULAR_HOTELS = [
 const DURATION_OPTIONS = [
   { title: "Short Time (2-3 hours)", desc: "Most popular in Velachery. Perfect for business travelers staying at hotels. She comes to you for a few hours-dinner, conversation, or relaxed evening. Pay when she arrives; no advance for regular and housewife profiles.", popular: true },
   { title: "Dinner or Evening", desc: "Fixed slot for a dinner, event, or party in Velachery. Tell us the start time and when it ends. Same payment rules. We match someone who fits the occasion.", popular: false },
-  { title: "Full Night", desc: "Dinner plus the night-typically 8–10 hours. Advance notice helps so we can confirm who's free in Velachery. Payment when she's there; for models and above we take a small advance.", popular: false },
+  { title: "Full Night", desc: "Dinner plus the night-typically 8-10 hours. Advance notice helps so we can confirm who's free in Velachery. Payment when she's there; for models and above we take a small advance.", popular: false },
   { title: "Outstation Travel", desc: "Trips from Velachery to Pondicherry, Mahabalipuram, or elsewhere. We need a few days' notice. Not every companion does outstation. Same discretion and payment.", popular: false },
 ];
 
@@ -489,7 +489,7 @@ export default function VelacheryEscortsPage() {
         <div className="absolute inset-0" aria-hidden="true">
           <Image
             src="/images/2.avif"
-            alt="Velachery escorts – premium outcall escort service in Chennai. Discreet, verified companions available for hotel and residential bookings in South Chennai."
+            alt="Velachery escorts - premium outcall escort service in Chennai. Discreet, verified companions available for hotel and residential bookings in South Chennai."
             fill
             className="object-cover object-center"
             priority
@@ -537,7 +537,7 @@ export default function VelacheryEscortsPage() {
               <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 mb-4 sm:mb-6 bg-[var(--accent-gold)]/20 backdrop-blur-md border border-[var(--accent-gold)]/40 rounded-full">
                 <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[var(--accent-gold)]" />
                 <span className="text-[10px] sm:text-xs font-semibold tracking-widest text-[var(--accent-gold)] uppercase">
-                  Chennai · South Chennai
+                  Chennai Â· South Chennai
                 </span>
               </div>
 
@@ -1232,7 +1232,7 @@ export default function VelacheryEscortsPage() {
                       <ul className="space-y-2 text-white/70 text-sm sm:text-base ml-4">
                         {item.list.map((li, i) => (
                           <li key={i} className="flex items-start gap-2">
-                            <span className="text-[var(--accent-gold)] mt-1">•</span>
+                            <span className="text-[var(--accent-gold)] mt-1">â€¢</span>
                             <span>{li}</span>
                           </li>
                         ))}
@@ -1265,7 +1265,7 @@ export default function VelacheryEscortsPage() {
             <div className="p-6 sm:p-8 bg-black/40 border border-white/10 rounded-xl">
               <h3 className="text-lg font-bold text-[var(--accent-gold)] mb-3">Same-Day Bookings</h3>
               <p className="text-white/75">
-                Message as early as you can. We usually reply within 1–2 hours; we&apos;ll tell you who&apos;s free and can reach you in Velachery. Popular for business travelers who decide last minute.
+                Message as early as you can. We usually reply within 1-2 hours; we&apos;ll tell you who&apos;s free and can reach you in Velachery. Popular for business travelers who decide last minute.
               </p>
             </div>
             <div className="p-6 sm:p-8 bg-black/40 border border-white/10 rounded-xl">
