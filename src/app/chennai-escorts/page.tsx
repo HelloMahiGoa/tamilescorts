@@ -365,7 +365,7 @@ export default function ChennaiEscortsPage() {
       </section>
 
       <Suspense fallback={null}>
-        <DailyProfilesSection citySlug="chennai-escorts" basePath="/chennai-escorts" />
+        <DailyProfilesSection citySlug="chennai-escorts" basePath="/chennai-escorts" disablePagination />
       </Suspense>
 
       {/* Section 3: Popular Areas – card + label */}

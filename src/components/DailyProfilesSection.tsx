@@ -8,10 +8,13 @@ import type { DailyProfile } from "@/lib/dailyProfiles";
 import { DAILY_PROFILE_CITIES } from "@/lib/dailyProfiles";
 
 const PROFILES_PER_PAGE = 10;
+const ALL_PROFILES_LIMIT = 100;
 
 interface DailyProfilesSectionProps {
   citySlug: string;
   basePath?: string;
+  /** When true, fetch all profiles in one request and hide pagination (e.g. for Chennai). */
+  disablePagination?: boolean;
 }
 
 function getCityName(slug: string): string {
@@ -27,10 +30,10 @@ function buildPageUrl(path: string, page: number): string {
   return `${path}${separator}daily_page=${page}#daily-available`;
 }
 
-export default function DailyProfilesSection({ citySlug, basePath }: DailyProfilesSectionProps) {
+export default function DailyProfilesSection({ citySlug, basePath, disablePagination }: DailyProfilesSectionProps) {
   const searchParams = useSearchParams();
   const pageParam = searchParams.get("daily_page");
-  const currentPage = Math.max(1, parseInt(String(pageParam || "1"), 10) || 1);
+  const currentPage = disablePagination ? 1 : Math.max(1, parseInt(String(pageParam || "1"), 10) || 1);
 
   const [profiles, setProfiles] = useState<DailyProfile[]>([]);
   const [total, setTotal] = useState(0);
@@ -38,6 +41,7 @@ export default function DailyProfilesSection({ citySlug, basePath }: DailyProfil
   const [loading, setLoading] = useState(true);
 
   const path = basePath ?? `/${citySlug}`;
+  const pageSize = disablePagination ? ALL_PROFILES_LIMIT : PROFILES_PER_PAGE;
 
   useEffect(() => {
     if (!DAILY_PROFILE_CITIES.includes(citySlug as (typeof DAILY_PROFILE_CITIES)[number])) {
@@ -46,7 +50,7 @@ export default function DailyProfilesSection({ citySlug, basePath }: DailyProfil
     }
     setLoading(true);
     fetch(
-      `/api/daily-profiles?city=${encodeURIComponent(citySlug)}&page=${currentPage}&limit=${PROFILES_PER_PAGE}`
+      `/api/daily-profiles?city=${encodeURIComponent(citySlug)}&page=${currentPage}&limit=${pageSize}`
     )
       .then((res) => res.json())
       .then((body: { data?: DailyProfile[]; total?: number; totalPages?: number }) => {
@@ -60,7 +64,7 @@ export default function DailyProfilesSection({ citySlug, basePath }: DailyProfil
         setTotalPages(0);
       })
       .finally(() => setLoading(false));
-  }, [citySlug, currentPage]);
+  }, [citySlug, currentPage, pageSize]);
 
   if (loading && profiles.length === 0) return null;
 
@@ -100,7 +104,7 @@ export default function DailyProfilesSection({ citySlug, basePath }: DailyProfil
               ))}
             </div>
 
-            {totalPages > 1 && (
+            {!disablePagination && totalPages > 1 && (
               <nav
                 className="mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-between"
                 aria-label="Daily profiles pagination"

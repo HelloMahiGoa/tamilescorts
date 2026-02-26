@@ -11,7 +11,7 @@ export async function GET(request: NextRequest) {
   }
 
   const page = Math.max(1, parseInt(request.nextUrl.searchParams.get("page") ?? "1", 10) || 1);
-  const limit = Math.min(24, Math.max(6, parseInt(request.nextUrl.searchParams.get("limit") ?? String(DEFAULT_PAGE_SIZE), 10) || DEFAULT_PAGE_SIZE));
+  const limit = Math.min(200, Math.max(6, parseInt(request.nextUrl.searchParams.get("limit") ?? String(DEFAULT_PAGE_SIZE), 10) || DEFAULT_PAGE_SIZE));
   const from = (page - 1) * limit;
   const to = from + limit - 1;
 
