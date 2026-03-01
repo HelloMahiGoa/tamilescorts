@@ -16,6 +16,9 @@ const siteLinks = [
   { label: "Terms", href: "/terms" },
 ];
 
+const TELEGRAM_GROUP_URL = "https://t.me/Tamil_Escorts_Chennai";
+const TELEGRAM_CHANNEL_URL = "https://t.me/Tamil_Escorts_official";
+
 export default function Footer() {
   // Use static year to avoid hydration mismatches
   const currentYear = 2026;
@@ -87,7 +90,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact & Telegram */}
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-[var(--accent-gold)]">
               Contact
@@ -101,6 +104,26 @@ export default function Footer() {
             >
               Get in Touch
             </Link>
+
+            <div className="mt-6 space-y-2 text-sm">
+              <p className="text-white/60 font-medium">Telegram community:</p>
+              <a
+                href={TELEGRAM_GROUP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-white/70 hover:text-[var(--accent-gold)]"
+              >
+                Join Chennai group
+              </a>
+              <a
+                href={TELEGRAM_CHANNEL_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-white/70 hover:text-[var(--accent-gold)]"
+              >
+                Follow updates channel
+              </a>
+            </div>
           </div>
         </div>
 

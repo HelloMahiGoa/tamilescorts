@@ -8,6 +8,8 @@ export const metadata = {
 
 const TELEGRAM_USERNAME = "Tamil_Escorts";
 const TELEGRAM_URL = "https://t.me/Tamil_Escorts";
+const TELEGRAM_GROUP_URL = "https://t.me/Tamil_Escorts_Chennai";
+const TELEGRAM_CHANNEL_URL = "https://t.me/Tamil_Escorts_official";
 
 export default function ContactPage() {
   return (
@@ -54,6 +56,51 @@ export default function ContactPage() {
                 Open Telegram
               </span>
               <span className="mt-3 text-xs text-white/50">Usually reply within 1–2 hours</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Telegram group & channel */}
+      <section className="relative py-12 border-t border-[var(--border-color)]">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-[var(--accent-gold)] mb-6 text-center">
+            Telegram Group & Channel
+          </h2>
+          <p className="text-white/70 text-center mb-8 text-sm sm:text-base max-w-2xl mx-auto">
+            For updates, offers and a feel for how we work in Chennai, you can also join our Telegram
+            group and follow our channel. Bookings still happen over direct chat.
+          </p>
+
+          <div className="grid gap-6 sm:grid-cols-2">
+            <a
+              href={TELEGRAM_GROUP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex flex-col rounded-2xl border border-[var(--border-color)] bg-[var(--card-bg)]/80 backdrop-blur-md p-6 transition-all hover:border-[var(--accent-gold)]/60 hover:shadow-[0_0_30px_var(--accent-gold)/10]"
+            >
+              <h3 className="text-lg font-semibold text-white mb-2">Chennai Telegram Group</h3>
+              <p className="text-white/70 text-sm mb-3">
+                Chat, questions and general updates focused on Chennai.
+              </p>
+              <span className="text-[var(--accent-gold)] text-sm font-semibold break-all">
+                {TELEGRAM_GROUP_URL}
+              </span>
+            </a>
+
+            <a
+              href={TELEGRAM_CHANNEL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex flex-col rounded-2xl border border-[var(--border-color)] bg-[var(--card-bg)]/80 backdrop-blur-md p-6 transition-all hover:border-[var(--accent-gold)]/60 hover:shadow-[0_0_30px_var(--accent-gold)/10]"
+            >
+              <h3 className="text-lg font-semibold text-white mb-2">Official Telegram Channel</h3>
+              <p className="text-white/70 text-sm mb-3">
+                Quiet channel for announcements, new profiles and timing updates.
+              </p>
+              <span className="text-[var(--accent-gold)] text-sm font-semibold break-all">
+                {TELEGRAM_CHANNEL_URL}
+              </span>
             </a>
           </div>
         </div>
